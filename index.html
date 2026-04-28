@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МегаМаркет - Профессиональный интернет-магазин</title>
+
+    <!-- Подключение шрифта Golos Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Подключение иконок Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ЭКРАН 1: Hero Screen -->
+    <section class="hero" id="hero">
+        <!-- Баннер МегаМарт -->
+        <div class="hero__banner">
+            <video src="assets/video.mp4" autoplay loop muted playsinline
+                style="display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;"></video>
+        </div>
+
+        <div class="hero__header">
+            <h1 class="hero__title">
+                Универсальный интернет-магазин <br>для оптовых и розничных продаж
+            </h1>
+            <p class="hero__desc">
+                Профессиональный шаблон для магазинов техники, электроники, оборудования. Опт и розница в одном решении.
+                Запустите полноценный онлайн-магазин менее чем за 24 часа.
+            </p>
+        </div>
+
+        <!-- Список преимуществ -->
+        <div class="hero__benefits">
+            <div class="hero__benefit">
+                <div class="hero__benefit-icon">
+                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                </div>
+                <span>Без разработки</span>
+            </div>
+            <div class="hero__benefit">
+                <div class="hero__benefit-icon">
+                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                </div>
+                <span>Без сложных настроек</span>
+            </div>
+            <div class="hero__benefit">
+                <div class="hero__benefit-icon">
+                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                </div>
+                <span>Без рисков</span>
+            </div>
+        </div>
+
+        <!-- Кнопка действия -->
+        <a href="#benefits" class="btn-primary">
+            Смотреть демо-версию
+            <div class="btn-primary__play">
+                <i data-lucide="play" style="width: 12px; height: 12px; fill: currentColor;"></i>
+            </div>
+        </a>
+    </section>
+
+    <section class="v2-benefits-section">
+        <div class="v2-container">
+            <!-- Мокап интерфейса (перенесен из Hero) -->
+            <div class="hero__mockup-container" style="margin-bottom: 1.25rem;">
+                <img src="assets/moc1.png" alt="Interface Mockup" class="hero__mockup-img">
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="bento-v2-container">
+                <!-- Сетка: 1 колонка на мобилках, 2 на планшетах, 3 на десктопе. -->
+                <div class="bento-v2-grid">
+
+                    <!-- 1. ГЛАВНЫЙ БЛОК (3 колонки х 2 строки) -->
+                    <div class="bento-v2-card--main group">
+
+                        <!-- Декоративные оранжевые волнистые линии на фоне -->
+                        <svg class="bento-v2-waves" preserveAspectRatio="none" viewBox="0 0 800 400" fill="none">
+                            <path d="M-50,80 C150,200 300,-20 500,120 C700,260 850,60 900,140" stroke="#FF7A00"
+                                stroke-width="1" opacity="0.5" fill="none" stroke-linecap="round" />
+                            <path d="M-50,110 C150,230 300,10 500,150 C700,290 850,90 900,170" stroke="#FF7A00"
+                                stroke-width="2.5" opacity="0.15" fill="none" stroke-linecap="round" />
+                            <path d="M-50,140 C150,260 300,40 500,180 C700,320 850,120 900,200" stroke="#FF7A00"
+                                stroke-width="1.5" opacity="0.35" fill="none" stroke-linecap="round" />
+                            <path d="M-50,170 C150,290 300,70 500,210 C700,350 850,150 900,230" stroke="#FF7A00"
+                                stroke-width="3" opacity="0.08" fill="none" stroke-linecap="round" />
+                            <path d="M-50,200 C150,320 300,100 500,240 C700,380 850,180 900,260" stroke="#FF7A00"
+                                stroke-width="1" opacity="0.2" fill="none" stroke-linecap="round" />
+                        </svg>
+
+                        <!-- Верхняя часть: Заголовок, текст и кнопка -->
+                        <div class="bento-v2-card-header">
+                            <div class="max-w-sm">
+                                <h1 class="bento-v2-main-title">
+                                    Откройте мощь <br />
+                                    <span class="text-brand-purple">e-commerce</span>
+                                </h1>
+                                <p class="bento-v2-main-desc">
+                                    Почувствуйте универсальность МегаМарт и его способность решать задачи бизнеса любых
+                                    масштабов.
+                                </p>
+                            </div>
+
+                            <!-- Кнопка "Посмотреть демо" по референсу -->
+                            <button class="bento-v2-btn-demo group">
+                                <div class="bento-v2-btn-icon-wrap">
+                                    <svg class="bento-v2-btn-main-arrow" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                                <span class="bento-v2-btn-text">Посмотреть демо</span>
+                                <div class="bento-v2-btn-arrows">
+                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M9 5l7 7-7 7">
+                                        </path>
+                                    </svg>
+                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M9 5l7 7-7 7">
+                                        </path>
+                                    </svg>
+                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M9 5l7 7-7 7">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+
+                        <!-- Нижняя часть: Блок с цифрами -->
+                        <div class="bento-v2-stats">
+                            <!-- Цифра 1 -->
+                            <div class="bento-v2-stat-wrap">
+                                <div class="bento-v2-stat-num">+100k</div>
+                                <div class="bento-v2-stat-desc">Товаров в одном каталоге
+                                </div>
+                            </div>
+                            <!-- Разделитель -->
+                            <div class="bento-v2-stat-divider"></div>
+                            <!-- Цифра 2 -->
+                            <div class="bento-v2-stat-wrap">
+                                <div class="bento-v2-stat-num">99%</div>
+                                <div class="bento-v2-stat-desc">Показатель Google
+                                    PageSpeed</div>
+                            </div>
+                            <!-- Разделитель -->
+                            <div class="bento-v2-stat-divider"></div>
+                            <!-- Цифра 3 -->
+                            <div class="bento-v2-stat-wrap">
+                                <div class="bento-v2-stat-num">+250</div>
+                                <div class="bento-v2-stat-desc">Настроек в панели
+                                    управления</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Адаптивность (2 колонки х 2 строки) - Занимает левую и центральную часть нижнего ряда -->
+                    <div class="bento-v2-card--adaptive group">
+
+                        <!-- Декоративное свечение сзади телефона -->
+                        <div class="bento-v2-glow">
+                        </div>
+
+                        <!-- Левая часть с текстом -->
+                        <div class="bento-v2-adaptive-text-wrap">
+                            <div class="relative z-10">
+                                <h2 class="bento-v2-adaptive-title">
+                                    Интерфейс идеально <br class="bento-v2-hidden-md" /> подстраивается.
+                                </h2>
+                                <p class="bento-v2-adaptive-desc">
+                                    Полная адаптивность под любые разрешения. Абсолютное удобство управления пальцем на
+                                    смартфонах.
+                                </p>
+                            </div>
+
+                            <div class="bento-v2-badge">
+                                <div class="bento-v2-badge-icon">
+                                    <svg class="bento-v2-feature-icon" style="color: white;" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="bento-v2-badge-text">Mobile UI/UX</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая часть: Уменьшенный CSS Мокап Телефона -->
+                        <div class="bento-v2-phone-wrap">
+                            <!-- Сам телефон -->
+                            <div class="bento-v2-phone">
+                                <!-- Внутренний интерфейс приложения -->
+                                <img src="assets/iscreen.jpg" alt="App Interface" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Бизнес выбирает МегаМарт (1 колонка х 2 строки) - Справа снизу -->
+                    <div class="bento-v2-card--business group">
+
+                        <div>
+                            <!-- Аватарки и счетчик -->
+                            <div class="bento-v2-avatar-row">
+                                <div class="bento-v2-avatar-stack">
+                                    <img src="assets/avatar1.png" alt="Avatar" class="object-cover">
+                                    <img src="assets/avatar2.png" alt="Avatar" class="object-cover">
+                                    <div class="bento-v2-avatar-badge bento-v2-avatar-badge--orange">+500</div>
+                                </div>
+                                <div class="bento-v2-clients-label">довольных<br>клиентов</div>
+                            </div>
+
+                            <!-- Плашки-преимущества -->
+                            <div class="bento-v2-feature-list">
+                                <div class="bento-v2-feature-item">
+                                    <div class="bento-v2-icon-orange">
+                                        <svg class="bento-v2-feature-icon" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="10" stroke-width="2.5"></circle>
+                                            <polyline points="12 6 12 12 16 14" stroke-width="2.5"></polyline>
+                                        </svg>
+                                    </div>
+                                    <span class="bento-v2-feature-text">Быстрый запуск магазина</span>
+                                </div>
+
+                                <div class="bento-v2-feature-item delay-75">
+                                    <div class="bento-v2-icon-purple">
+                                        <svg class="bento-v2-feature-icon" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <rect x="3" y="3" width="7" height="7" stroke-width="2.5"></rect>
+                                            <rect x="14" y="3" width="7" height="7" stroke-width="2.5"></rect>
+                                            <rect x="14" y="14" width="7" height="7" stroke-width="2.5"></rect>
+                                            <rect x="3" y="14" width="7" height="7" stroke-width="2.5"></rect>
+                                        </svg>
+                                    </div>
+                                    <span class="bento-v2-feature-text">Готовые страницы</span>
+                                </div>
+
+                                <div class="bento-v2-feature-item delay-150">
+                                    <div class="bento-v2-icon-blue">
+                                        <svg class="bento-v2-feature-icon" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2">
+                                            </polygon>
+                                        </svg>
+                                    </div>
+                                    <span class="bento-v2-feature-text">SEO из коробки</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Текстовая часть -->
+                        <div class="mt-auto pt-6">
+                            <h3 class="bento-v2-business-title">Бизнес
+                                выбирает
+                                МегаМарт</h3>
+                            <p class="bento-v2-business-desc">Эффективное масштабирование продаж.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- БЛОК С ЦИТАТОЙ: Философия продукта -->
+    <section class="quote-section">
+        <div class="bento-v2-container">
+            <div class="quote-section__header">
+                <h2 class="quote-section__title">Философия продукта</h2>
+                <p class="quote-section__subtitle">Опыт, заложенный в основу каждой функции и каждого пикселя</p>
+            </div>
+
+            <div class="quote-section__bubble-wrap">
+                <!-- Иконка кавычек -->
+                <div class="quote-section__icon">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 18V10.8C0 8.93333 0.4 7.13333 1.2 5.4C2.02667 3.64 3.22667 2.17333 4.8 1L6.6 3.4C5.53333 4.2 4.68 5.16 4.04 6.28C3.4 7.4 3.05333 8.62667 3 10H6V18H0ZM12 18V10.8C12 8.93333 12.4 7.13333 13.2 5.4C14.0267 3.64 15.2267 2.17333 16.8 1L18.6 3.4C17.5333 4.2 16.68 5.16 16.04 6.28C15.4 7.4 15.0533 8.62667 15 10H18V18H12Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+                <!-- Пузырь с цитатой -->
+                <div class="quote-section__bubble">
+                    <p class="quote-section__text">
+                        «Решение разрабатывалось для владельцев интернет-магазинов, которые ценят своё время и по
+                        достоинству способны оценить встроенные инструменты маркетинга»
+                    </p>
+                    <!-- Хвостик пузыря -->
+                    <div class="quote-section__bubble-tail"></div>
+                </div>
+            </div>
+
+            <!-- Автор -->
+            <div class="quote-section__author">
+                <div class="quote-section__avatar">
+                    <img src="assets/avatar3.png" alt="Владислав" class="quote-section__avatar-img">
+                </div>
+                <div class="quote-section__author-info">
+                    <span class="quote-section__author-name">Владислав</span>
+                    <span class="quote-section__author-role">Менеджер проекта МегаМаркет</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Витрины — варианты главной страницы -->
+    <section class="vitrine-section">
+        <div class="bento-v2-container">
+
+            <!-- Шапка -->
+            <div class="vitrine-section__header">
+                <h2 class="vitrine-section__title">
+                    Только вам решать, как <br> выглядит <span class="text-brand-purple">ваш магазин</span>
+                </h2>
+                <p class="vitrine-section__subtitle">
+                    От функционального каталога до имиджевой витрины. Выберите концепцию, которая подчеркнет
+                    уникальность вашего бренда.
+                </p>
+            </div>
+
+            <!-- Карточки витрин -->
+            <div class="vitrine-section__grid">
+
+                <!-- Карточка 1: Классический -->
+                <div class="vitrine-card vitrine-card--classic">
+                    <div class="vitrine-card__top">
+                        <span class="vitrine-card__num">01</span>
+                        <div class="vitrine-card__info">
+                            <div class="vitrine-card__name">Классический вид</div>
+                            <div class="vitrine-card__desc">Акцент на товары и каталог</div>
+                        </div>
+                    </div>
+                    <div class="vitrine-card__mockup">
+                        <img src="assets/moc1.png" alt="Классическая витрина" class="vitrine-card__img">
+                    </div>
+                </div>
+
+                <!-- Карточка 2: Имиджевая -->
+                <div class="vitrine-card vitrine-card--image">
+                    <div class="vitrine-card__top">
+                        <span class="vitrine-card__num vitrine-card__num--purple">02</span>
+                        <div class="vitrine-card__info">
+                            <div class="vitrine-card__name">Яркая витрина</div>
+                            <div class="vitrine-card__desc">Акцент на имидж и бренд</div>
+                        </div>
+                    </div>
+                    <div class="vitrine-card__mockup">
+                        <img src="assets/dmoc.png" alt="Имиджевая витрина" class="vitrine-card__img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- БЛОК: Главная страница — фичи для клиента -->
+    <section class="mainpage-section">
+        <div class="bento-v2-container">
+
+            <!-- Шапка -->
+            <div class="mainpage-section__header">
+                <h2 class="mainpage-section__title">
+                    <span class="text-brand-purple">Главная страница</span>, которая продаёт за вас
+                </h2>
+                <p class="mainpage-section__subtitle">
+                    Продуманная архитектура блоков и визуальные акценты направляют покупателя от первого клика до
+                    оформления заказа.
+                </p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="mp-grid">
+
+                <!-- 1. Шапка сайта — full width -->
+                <div class="mp-card mp-card--full mp-card--header-site">
+                    <div class="mp-card__text">
+                        <span class="mp-card__tag">Шапка сайта</span>
+                        <h3 class="mp-card__title">Больше 20 вариантов</h3>
+                        <p class="mp-card__desc">Оформления шапки и удобной навигации для любой ниши. Легко адаптируется
+                            под ваш фирменный стиль.</p>
+                    </div>
+                    <div class="mp-card__visual mp-card__visual--header">
+                        <div class="mp-header-stack">
+                            <div class="mp-header-mockup mp-header-mockup--1">
+                                <img src="assets/header1.png" alt="Вариант шапки 1" class="mp-header-img">
+                            </div>
+                            <div class="mp-header-mockup mp-header-mockup--2">
+                                <img src="assets/header2.png" alt="Вариант шапки 2" class="mp-header-img">
+                            </div>
+                            <div class="mp-header-mockup mp-header-mockup--3">
+                                <img src="assets/header3.png" alt="Вариант шапки 3" class="mp-header-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Промо (half) -->
+                <div class="mp-card mp-card--half mp-card--promo">
+                    <div class="mp-card__visual mp-card__visual--promo">
+                        <div class="mp-promo-banner">
+                            <div class="mp-promo-banner__lines">
+                                <div class="mp-promo-line mp-promo-line--lg"></div>
+                                <div class="mp-promo-line mp-promo-line--md"></div>
+                                <div class="mp-promo-btn-fake"></div>
+                            </div>
+                            <div class="mp-promo-percent">%</div>
+                        </div>
+                    </div>
+                    <div class="mp-card__body">
+                        <span class="mp-card__tag mp-card__tag--purple">Промо</span>
+                        <h3 class="mp-card__title">Место для акций</h3>
+                        <p class="mp-card__desc">Яркие баннеры для сезонных распродаж привлекают внимание.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Лояльность (half) -->
+                <div class="mp-card mp-card--half mp-card--loyalty">
+                    <div class="mp-card__visual mp-card__visual--loyalty">
+                        <div class="mp-stars-card">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mp-card__body">
+                        <span class="mp-card__tag mp-card__tag--purple">Лояльность</span>
+                        <h3 class="mp-card__title">Отзывы клиентов</h3>
+                        <p class="mp-card__desc">Реальные отзывы кратно повышают конверсию в покупку.</p>
+                    </div>
+                </div>
+
+
+                <!-- 4. Каталог на главной — full width -->
+                <div class="mp-card mp-card--full mp-card--cat-main">
+                    <div class="mp-card__body mp-card__body--top">
+                        <span class="mp-card__tag mp-card__tag--purple">Главная</span>
+                        <h3 class="mp-card__title">Каталог товаров</h3>
+                        <p class="mp-card__desc">Удобный вывод категорий и разделов прямо на главной странице для
+                            быстрого доступа к товарам.</p>
+                    </div>
+                    <div class="mp-card__visual mp-card__visual--cat-main">
+                        <div class="mp-cat-main-mockup">
+                            <img src="assets/catalogscr.png" alt="Каталог товаров" class="mp-cat-main-img">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 7. Охват (half) -->
+                <div class="mp-card mp-card--half mp-card--geo">
+                    <div class="mp-card__visual mp-card__visual--geo">
+                        <!-- Phonetic Map Elements -->
+                        <div class="mp-geo-point mp-geo-point--1"></div>
+                        <div class="mp-geo-point mp-geo-point--2"></div>
+                        <div class="mp-geo-point mp-geo-point--3"></div>
+                        <div class="mp-geo-point mp-geo-point--4"></div>
+                        <div class="mp-geo-point mp-geo-point--5"></div>
+
+                        <div class="mp-geo-stack">
+                            <div class="mp-geo-mockup mp-geo-mockup--1">
+                                <img src="assets/sc1.png" alt="География 1" class="mp-geo-img">
+                            </div>
+                            <div class="mp-geo-mockup mp-geo-mockup--2">
+                                <img src="assets/sc2.png" alt="География 2" class="mp-geo-img">
+                            </div>
+                            <div class="mp-geo-mockup mp-geo-mockup--3">
+                                <img src="assets/sc3.png" alt="География 3" class="mp-geo-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-card__body">
+                        <span class="mp-card__tag mp-card__tag--purple">Охват</span>
+                        <h3 class="mp-card__title">Ваша география</h3>
+                        <p class="mp-card__desc">Покажите наглядную карту покрытия и адреса ПВЗ.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Маркетинг (half) -->
+                <div class="mp-card mp-card--half mp-card--marketing">
+                    <div class="mp-card__visual mp-card__visual--marketing">
+                        <div class="mp-subscribe-form">
+                            <div class="mp-subscribe-input">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                <div class="mp-subscribe-line"></div>
+                            </div>
+                            <div class="mp-subscribe-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2.5">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-card__body">
+                        <span class="mp-card__tag mp-card__tag--purple">Маркетинг</span>
+                        <h3 class="mp-card__title">Будь в курсе!</h3>
+                        <p class="mp-card__desc">Форма подписки для сбора базы email.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Витрина — full width -->
+                <div class="mp-card mp-card--full mp-card--vitrina">
+                    <div class="mp-card__body mp-card__body--top">
+                        <span class="mp-card__tag mp-card__tag--purple">Витрина</span>
+                        <h3 class="mp-card__title">Группируйте товары</h3>
+                        <p class="mp-card__desc">Хиты продаж, новинки и скидки для привлечения максимального внимания
+                            покупателей.</p>
+                    </div>
+                    <div class="mp-card__visual mp-card__visual--vitrina">
+                        <div class="mp-vitrina-mockup">
+                            <img src="assets/regscr.png" alt="Витрина товаров" class="mp-vitrina-img">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- БЛОК: Умный каталог и навигация (REIMAGINED PER REF) -->
+    <section class="catalog-section">
+        <div class="bento-v2-container">
+            <!-- 1. Основная шапка -->
+            <div class="mainpage-section__header">
+                <h2 class="mainpage-section__title">
+                    <span class="text-brand-purple">Умный каталог</span> и навигация
+                </h2>
+                <p class="mainpage-section__subtitle">
+                    Покупатель находит нужный товар за секунды благодаря продуманной системе фильтрации, поиска и
+                    сортировки. Три режима отображения товаров для максимального удобства.
+                </p>
+            </div>
+
+            <!-- Иллюстрация каталога -->
+            <div class="catalog-main-visual">
+                <div class="catalog-main-mockup">
+                    <img src="assets/catalog.png" alt="Умный каталог" class="catalog-main-img">
+                </div>
+            </div>
+
+            <!-- 2. Подзаголовок: Режим оптовой и розничной торговли -->
+            <div class="catalog-sub-header">
+                <h3 class="catalog-sub-title">Режим оптовой и розничной торговли</h3>
+                <p class="catalog-sub-desc">
+                    Оптовая и розничная торговля в одной системе. Специальные виды списков и поддержка разных типов цен
+                    для ваших партнеров.
+                </p>
+            </div>
+
+            <!-- Сетка 2+1: Розничная и оптовая торговля -->
+            <div class="modes-compact-bento">
+
+                <!-- Карта 1: Розница -->
+                <div class="mode-compact-card">
+                    <div class="mode-compact-card__visual">
+                        <img src="assets/sp2.png" alt="Витрина">
+                    </div>
+                    <div class="mode-compact-card__info">
+                        <div class="mode-card-header">
+                            <div class="mode-card-icon-box mode-card-icon-box--orange">
+                                <i data-lucide="shopping-bag"></i>
+                            </div>
+                            <div class="mode-card-title">Розничный режим</div>
+                        </div>
+                        <p>Фокус на визуале. Крупные фото и акцент на деталях для максимальной вовлеченности покупателя.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карта 2: Универсальный -->
+                <div class="mode-compact-card">
+                    <div class="mode-compact-card__visual">
+                        <img src="assets/sp3.png" alt="Галерея">
+                    </div>
+                    <div class="mode-compact-card__info">
+                        <div class="mode-card-header">
+                            <div class="mode-card-icon-box mode-card-icon-box--purple">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <div class="mode-card-title">Комбинированный вид</div>
+                        </div>
+                        <p>Золотая середина. Вся информация и кнопка покупки доступны без перехода в карточку.</p>
+                    </div>
+                </div>
+
+                <!-- Карта 3: Опт -->
+                <div class="mode-compact-card mode-compact-card--wide">
+                    <div class="mode-compact-card__visual">
+                        <img src="assets/sp1.png" alt="Список">
+                    </div>
+                    <div class="mode-compact-card__info">
+                        <div class="mode-card-header">
+                            <div class="mode-card-icon-box mode-card-icon-box--blue">
+                                <i data-lucide="clipboard-list"></i>
+                            </div>
+                            <div class="mode-card-title">Оптовый режим (B2B)</div>
+                        </div>
+                        <div class="mode-info-grid">
+                            <p>Скорость и точность. Табличный вид для массовых заказов и молниеносного выбора по SKU.
+                            </p>
+                            <ul class="mode-info-list">
+                                <li><i data-lucide="check"></i> Массовые закупки</li>
+                                <li><i data-lucide="check"></i> Цены для оптовиков</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Блок: Несколько типов цен (в отдельной карточке) -->
+            <div class="pricing-reimagined">
+                <div class="pricing-card-header">
+                    <div class="pricing-card-icon">
+                        <i data-lucide="russian-ruble"></i>
+                    </div>
+                    <div class="pricing-card-labels">
+                        <h4>Несколько типов цен</h4>
+                        <p>Гибкая система ценообразования для B2B и B2C сегментов</p>
+                    </div>
+                </div>
+
+                <div class="pricing-card-body">
+                    <!-- Левая часть: Выделенные цены -->
+                    <div class="pricing-body-left">
+                        <div class="pricing-table-display">
+                            <div class="price-display-row">
+                                <span class="price-label">Базовая цена:</span>
+                                <span class="price-val">71 490 <small>руб./шт.</small></span>
+                            </div>
+                            <div class="price-display-row price-display-row--accent">
+                                <span class="price-label">Оптовая цена:</span>
+                                <span class="price-val">69 990 <small>руб./шт.</small></span>
+                            </div>
+                            <div class="price-display-more">Ещё (2)...</div>
+                        </div>
+                    </div>
+
+                    <!-- Правая часть: Список всех цен -->
+                    <div class="pricing-body-right">
+                        <ul class="pricing-dots-list">
+                            <li>Розничная цена</li>
+                            <li>Оптовая цена</li>
+                            <li>Дилерская цена</li>
+                            <li>VIP-цена</li>
+                        </ul>
+                        <div class="pricing-sync-info">
+                            Цены синхронизируются автоматически из 1С
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Текст: Умный фильтр -->
+            <div class="catalog-sub-header catalog-sub-header--last">
+                <p class="catalog-sub-desc">
+                    Умный фильтр – это самый эффективный менеджер по продажам в вашем интернет магазине. Он задаст
+                    нужные вопросы, а пользователи на них ответят и получат нужные им товары.
+                </p>
+            </div>
+
+            <!-- Карточка: Умный фильтр -->
+            <div class="ui-filter-container">
+                <!-- Заголовок карточки -->
+                <div class="ui-filter-top-header">
+                    <div class="ui-filter-main-icon">
+                        <i data-lucide="filter"></i>
+                    </div>
+                    <div class="ui-filter-main-text">
+                        <h4>Настраиваемые фильтры</h4>
+                        <p>5 видов визуального отображения</p>
+                    </div>
+                </div>
+
+                <!-- Основная сетка фильтров -->
+                <div class="ui-filter-visual-board">
+                    <!-- Ряд 1: Страна и Наличие -->
+                    <div class="ui-filter-row">
+                        <!-- 1. Страна -->
+                        <div class="ui-filter-card">
+                            <div class="ui-filter-card-head">
+                                <span>Страна</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="ui-filter-card-body">
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-check"></div>
+                                    <span>Белоруссия</span>
+                                </div>
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-check"></div>
+                                    <span>Бельгия</span>
+                                </div>
+                                <div class="ui-filter-option ui-filter-option--active">
+                                    <div class="ui-custom-check ui-custom-check--active">
+                                        <i data-lucide="check"></i>
+                                    </div>
+                                    <span>Великобритания</span>
+                                </div>
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-check"></div>
+                                    <span>Германия</span>
+                                </div>
+                            </div>
+                            <div class="ui-filter-card-foot">
+                                <span class="ui-filter-type-label">Множественный выбор</span>
+                                <span class="ui-filter-badge">1</span>
+                            </div>
+                        </div>
+
+                        <!-- 2. Наличие -->
+                        <div class="ui-filter-card">
+                            <div class="ui-filter-card-head">
+                                <span>Наличие</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="ui-filter-card-body">
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-radio"></div>
+                                    <span>Все товары</span>
+                                </div>
+                                <div class="ui-filter-option ui-filter-option--active">
+                                    <div class="ui-custom-radio ui-custom-radio--active"></div>
+                                    <span>В наличии</span>
+                                </div>
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-radio"></div>
+                                    <span>Под заказ</span>
+                                </div>
+                                <div class="ui-filter-option">
+                                    <div class="ui-custom-radio"></div>
+                                    <span>Со скидкой</span>
+                                </div>
+                            </div>
+                            <div class="ui-filter-card-foot">
+                                <span class="ui-filter-type-label">Единственный выбор</span>
+                                <span class="ui-filter-badge">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ряд 2: Цвет, Цена, Бренд -->
+                    <div class="ui-filter-row ui-filter-row--three">
+                        <!-- 3. Цвет -->
+                        <div class="ui-filter-card">
+                            <div class="ui-filter-card-head">
+                                <span>Цвет</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="ui-filter-card-body">
+                                <div class="ui-color-palette">
+                                    <div class="ui-color-item ui-color-item--active" style="background: #94ad58;"></div>
+                                    <div class="ui-color-item" style="background: #d32f2f;"></div>
+                                    <div class="ui-color-item" style="background: #ff9800;"></div>
+                                    <div class="ui-color-item" style="background: #4285f4;"></div>
+                                </div>
+                            </div>
+                            <div class="ui-filter-card-foot">
+                                <span class="ui-filter-type-label">Цветовая палитра</span>
+                                <span class="ui-filter-badge">3</span>
+                            </div>
+                        </div>
+
+                        <!-- 4. Цена -->
+                        <div class="ui-filter-card">
+                            <div class="ui-filter-card-head">
+                                <span>Цена</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="ui-filter-card-body">
+                                <div class="ui-price-inputs">
+                                    <div class="ui-price-field">20</div>
+                                    <span class="ui-price-dash">—</span>
+                                    <div class="ui-price-field">2 800</div>
+                                </div>
+                                <div class="ui-price-slider-wrap">
+                                    <div class="ui-slider-base">
+                                        <div class="ui-slider-fill" style="left: 15%; width: 60%;"></div>
+                                        <div class="ui-slider-handle" style="left: 15%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-filter-card-foot">
+                                <span class="ui-filter-type-label">Диапазон значений</span>
+                                <span class="ui-filter-badge">4</span>
+                            </div>
+                        </div>
+
+                        <!-- 5. Бренд -->
+                        <div class="ui-filter-card">
+                            <div class="ui-filter-card-head">
+                                <span>Бренд</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="ui-filter-card-body">
+                                <div class="ui-dropdown-fake">
+                                    <span>Все бренды</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="ui-filter-card-foot">
+                                <span class="ui-filter-type-label">Выпадающий список</span>
+                                <span class="ui-filter-badge">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Футер: теги и результат -->
+                <div class="ui-filter-results-bar">
+                    <div class="ui-filter-pills-row">
+                        <span class="ui-pill">Бренд</span>
+                        <span class="ui-pill">Цена</span>
+                        <span class="ui-pill">Размер</span>
+                        <span class="ui-pill">Цвет</span>
+                        <span class="ui-pill">Материал</span>
+                        <span class="ui-pill">В наличии</span>
+                    </div>
+                    <div class="ui-filter-final-count">
+                        <i data-lucide="search"></i>
+                        Найдено: <strong>1 247</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЭКРАН 3.7: ПОДБОРКА ФИЛЬТРОВ -->
+    <section class="section" id="quick-filters">
+        <div class="bento-v2-container">
+            <div class="mainpage-section__header">
+                <h2 class="mainpage-section__title">
+                    <span class="text-brand-purple">Подборка фильтров</span> для быстрого поиска
+                </h2>
+                <p class="mainpage-section__subtitle">
+                    Создавайте популярные подборки фильтров, чтобы помочь покупателям быстрее найти нужный товар
+                </p>
+            </div>
+
+            <div style="width: 800px; max-width: 95vw; margin: 0 auto; display: flex; justify-content: center;">
+                <div
+                    style="background: white; border: 1px solid var(--color-border); border-radius: 32px; padding: 12px; box-shadow: var(--shadow-custom); width: 100%; padding-bottom: 80px; position: relative;">
+
+                    <!-- Внутренний контейнер -->
+                    <div
+                        style="background: var(--color-primary); border-radius: 24px; padding: 40px; color: white; position: relative;">
+                        <!-- Хлебные крошки -->
+                        <div
+                            style="font-size: 11px; font-weight: 600; opacity: 0.7; margin-bottom: 12px; letter-spacing: 0.05em;">
+                            Главная страница <span style="margin: 0 4px;">|</span> Каталог
+                        </div>
+
+                        <!-- Заголовок -->
+                        <h3 style="font-size: 32px; font-weight: 600; margin-bottom: 32px; letter-spacing: -0.02em;">
+                            Электроника</h3>
+
+                        <!-- Кнопки быстрых фильтров -->
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <div
+                                style="background: white; color: var(--color-text); padding: 10px 24px; border-radius: 50px; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.3s;">
+                                Умные часы Apple
+                            </div>
+                            <div
+                                style="background: white; color: var(--color-text); padding: 10px 24px; border-radius: 50px; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.3s;">
+                                До 50 тыс. руб.
+                            </div>
+                            <div
+                                style="background: var(--color-accent); color: white; padding: 10px 24px; border-radius: 50px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 8px 20px rgba(247,145,61,0.3); position: relative; z-index: 2; transition: all 0.3s;">
+                                Новые Смартфоны 128 Gb
+                            </div>
+                        </div>
+
+                        <!-- Всплывающие подсказки (Выбранные параметры) -->
+                        <div
+                            style="position: absolute; right: 140px; bottom: -65px; display: flex; flex-direction: column; gap: 10px; z-index: 10;">
+                            <!-- Смартфоны -->
+                            <div style="display: flex; align-items: center; justify-content: flex-end;">
+                                <div
+                                    style="background: white; padding: 8px 16px; border-radius: 12px; box-shadow: var(--shadow-custom); font-size: 11px; font-weight: 600; color: var(--color-text); display: flex; align-items: center; gap: 10px; border: 1px solid var(--color-border);">
+                                    Смартфоны
+                                    <div
+                                        style="width: 14px; height: 14px; background: var(--color-accent); border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+                                        <i data-lucide="check" style="width: 10px; color: white; stroke-width: 3;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Новинки -->
+                            <div
+                                style="display: flex; align-items: center; justify-content: flex-end; transform: translateX(-15px);">
+                                <div
+                                    style="background: white; padding: 8px 16px; border-radius: 12px; box-shadow: var(--shadow-custom); font-size: 11px; font-weight: 600; color: var(--color-text); display: flex; align-items: center; gap: 10px; border: 1px solid var(--color-border);">
+                                    Новинки
+                                    <div
+                                        style="width: 14px; height: 14px; background: var(--color-accent); border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+                                        <i data-lucide="check" style="width: 10px; color: white; stroke-width: 3;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Память 128 b -->
+                            <div
+                                style="display: flex; align-items: center; justify-content: flex-end; transform: translateX(-30px);">
+                                <div
+                                    style="background: white; padding: 8px 16px; border-radius: 12px; box-shadow: var(--shadow-custom); font-size: 11px; font-weight: 600; color: var(--color-text); display: flex; align-items: center; gap: 10px; border: 1px solid var(--color-border);">
+                                    Память 128 b
+                                    <div
+                                        style="width: 14px; height: 14px; background: var(--color-accent); border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+                                        <i data-lucide="check" style="width: 10px; color: white; stroke-width: 3;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ЭКРАН 3.8: КАРТОЧКА ТОВАРА -->
+    <section class="section" id="product-card">
+        <div class="bento-v2-container">
+            <div class="mainpage-section__header">
+                <h2 class="mainpage-section__title">
+                    <span class="text-brand-purple">Карточка товара</span> с высокой конверсией
+                </h2>
+                <p class="mainpage-section__subtitle">
+                    Каждый элемент карточки товара оптимизирован для увеличения продаж. Всё для принятия решения о
+                    покупке прямо на странице.
+                </p>
+            </div>
+
+            <div class="catalog-main-visual" style="margin-top: 2.5rem;">
+                <div class="catalog-main-mockup">
+                    <img src="assets/itemIphone.png" alt="Карточка товара iPhone" class="catalog-main-img"
+                        style="object-fit: contain; border-radius: 26px; background: #fff; max-height: 600px;">
+                </div>
+            </div>
+
+            <div class="config-grid" style="margin-top: 2.5rem;">
+
+                <!-- 1. Навигация и Дизайн карточки (Широкий блок) -->
+                <div class="setting-card col-span-12"
+                    style="padding: 0; display: flex; flex-wrap: wrap; overflow: hidden;">
+                    <div
+                        style="flex: 1 1 300px; padding: 4rem 3rem; background: #F9FAFB; border-right: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: center;">
+                        <div class="setting-card__header">
+                            <div class="setting-icon setting-icon--blue"><i data-lucide="navigation"
+                                    style="width: 16px;"></i></div>
+                            <h4 class="setting-title">Якорная навигация</h4>
+                        </div>
+                        <p
+                            style="font-size: 15px; color: var(--color-text-muted); font-weight: 500; line-height: 1.6; margin-bottom: 0;">
+                            Карточка-лендинг с интуитивной якорной навигацией помогает клиенту быстро выбрать товар и
+                            легко найти нужную информацию, не прокручивая длинные страницы.
+                        </p>
+                    </div>
+                    <div
+                        style="flex: 1.5 1 400px; padding: 2.5rem; display: flex; align-items: center; justify-content: center; background: white;">
+                        <img src="assets/navitem.png"
+                            style="width: 100%; max-height: 480px; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.06));"
+                            alt="Якорная навигация">
+                    </div>
+                </div>
+
+                <!-- 2. Торговые предложения (SKU) -->
+                <div class="setting-card md-col-span-7 col-span-12">
+                    <div class="setting-card__header">
+                        <div class="setting-icon setting-icon--orange"><i data-lucide="layers" style="width: 16px;"></i>
+                        </div>
+                        <h4 class="setting-title">Торговые предложения (SKU)</h4>
+                    </div>
+                    <p
+                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 20px;">
+                        Объединяйте вариации в одной карточке. Цвета, размеры, фасовки.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
+                        <div
+                            style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+                            <span
+                                style="font-size: 10px; font-weight: 600; color: #9CA3AF; margin-bottom: 12px; display: block;">Цвет:
+                                <span style="color: var(--color-text);">Чёрный</span></span>
+                            <div style="display: flex; gap: 10px;">
+                                <div
+                                    style="width: 28px; height: 28px; border-radius: 8px; background: #111827; border: 2px solid white; box-shadow: 0 0 0 1px var(--color-accent); cursor: pointer;">
+                                </div>
+                                <div
+                                    style="width: 28px; height: 28px; border-radius: 8px; background: #E5E7EB; border: 2px solid white; box-shadow: 0 0 0 1px #E5E7EB; cursor: pointer;">
+                                </div>
+                                <div
+                                    style="width: 28px; height: 28px; border-radius: 8px; background: #3B82F6; border: 2px solid white; box-shadow: 0 0 0 1px #E5E7EB; cursor: pointer;">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+                            <span
+                                style="font-size: 10px; font-weight: 600; color: #9CA3AF; margin-bottom: 12px; display: block;">Размер:</span>
+                            <div style="display: flex; gap: 8px;">
+                                <div
+                                    style="padding: 6px 14px; background: white; border: 1px solid var(--color-accent); color: var(--color-accent); font-size: 11px; font-weight: 700; border-radius: 8px; cursor: pointer;">
+                                    S</div>
+                                <div
+                                    style="padding: 6px 14px; background: white; border: 1px solid #E5E7EB; color: #4B5563; font-size: 11px; font-weight: 600; border-radius: 8px; cursor: pointer;">
+                                    M</div>
+                                <div
+                                    style="padding: 6px 14px; background: white; border: 1px solid #E5E7EB; color: #4B5563; font-size: 11px; font-weight: 600; border-radius: 8px; cursor: pointer;">
+                                    L</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Типы цен и Акции -->
+                <div class="setting-card md-col-span-5 col-span-12">
+                    <div class="setting-card__header">
+                        <div class="setting-icon setting-icon--emerald"><i data-lucide="percent"
+                                style="width: 16px;"></i>
+                        </div>
+                        <h4 class="setting-title">Акции и типы цен</h4>
+                    </div>
+                    <p
+                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 20px;">
+                        Создавайте персональные цены, оптовые скидки и таймеры акций прямо на странице товара.
+                    </p>
+                    <div
+                        style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px dashed #E5E7EB; padding-bottom: 12px;">
+                            <span style="font-size: 12px; color: #6B7280; font-weight: 500;">Розничная</span>
+                            <span
+                                style="font-size: 12px; color: #9CA3AF; text-decoration: line-through; font-weight: 600;">1
+                                450 ₽</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px; color: var(--color-text); font-weight: 700;">Ваша цена</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span
+                                    style="background: #EF4444; color: white; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 800;">-100
+                                    ₽</span>
+                                <span style="font-size: 18px; color: var(--color-text); font-weight: 800;">1 350
+                                    ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Наборы и комплекты -->
+                <div class="setting-card col-span-12">
+                    <div class="setting-card__header">
+                        <div class="setting-icon setting-icon--pink"><i data-lucide="package-plus"
+                                style="width: 16px;"></i>
+                        </div>
+                        <h4 class="setting-title">Наборы и комплекты</h4>
+                    </div>
+                    <p
+                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 24px; max-width: 650px;">
+                        Фиксированные комплекты со скидкой или настраиваемые наборы для увеличения среднего чека.
+                    </p>
+                    <div
+                        style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 16px; padding: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                            <!-- Main Item -->
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                                    <i data-lucide="monitor" style="width: 28px; color: var(--color-primary);"></i>
+                                </div>
+                                <span
+                                    style="font-size: 10px; font-weight: 700; color: var(--color-text);">Монитор</span>
+                            </div>
+                            <i data-lucide="plus" style="width: 16px; color: #D1D5DB;"></i>
+                            <!-- Accessory 1 -->
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                                    <i data-lucide="keyboard" style="width: 28px; color: #9CA3AF;"></i>
+                                </div>
+                                <span style="font-size: 10px; font-weight: 600; color: #6B7280;">Клавиатура</span>
+                            </div>
+                            <i data-lucide="plus" style="width: 16px; color: #D1D5DB;"></i>
+                            <!-- Accessory 2 -->
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                                    <i data-lucide="mouse" style="width: 28px; color: #9CA3AF;"></i>
+                                </div>
+                                <span style="font-size: 10px; font-weight: 600; color: #6B7280;">Мышь</span>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+                            <div>
+                                <div
+                                    style="font-size: 12px; color: #9CA3AF; text-decoration: line-through; font-weight: 600; margin-bottom: 2px;">
+                                    24 500 ₽</div>
+                                <div style="font-size: 22px; font-weight: 800; color: var(--color-text);">19 900 ₽</div>
+                                <div style="font-size: 11px; color: #10B981; font-weight: 700; margin-top: 6px;">Вы
+                                    экономите 4 600 ₽</div>
+                            </div>
+                            <div
+                                style="background: var(--color-accent); color: white; padding: 12px 24px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 6px 15px rgba(247,145,61,0.2); transition: all 0.3s;">
+                                В корзину
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+
+        function initFaqAccordion() {
+            const faqTriggers = document.querySelectorAll('.faq-card__trigger');
+            faqTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const card = trigger.parentElement;
+                    const isOpen = card.classList.contains('faq-card--open');
+
+                    // Закрываем все остальные (если нужно)
+                    document.querySelectorAll('.faq-card').forEach(c => {
+                        c.classList.remove('faq-card--open');
+                    });
+
+                    // Переключаем текущую
+                    if (!isOpen) {
+                        card.classList.add('faq-card--open');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

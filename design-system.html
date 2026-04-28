@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МегаМарт | Дизайн-система</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            /* Design System Page Specific Overlay */
+            --ds-bg: #f8fafc;
+            --ds-border: #e2e8f0;
+        }
+
+        body.ds-body {
+            background-color: var(--ds-bg);
+            font-family: var(--font-secondary);
+            color: var(--color-text);
+            padding: 0;
+            margin: 0;
+            overflow-x: auto;
+        }
+
+        .ds-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .ds-sidebar {
+            width: 280px;
+            background: #fff;
+            border-right: 1px solid var(--ds-border);
+            padding: 2rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .ds-logo {
+            font-family: var(--font-main);
+            font-weight: 800;
+            font-size: 20px;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .ds-logo-square {
+            width: 32px;
+            height: 32px;
+            background: var(--color-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .ds-nav-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .ds-nav-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2.5rem;
+        }
+
+        .ds-nav-item a {
+            display: block;
+            padding: 0.75rem 0;
+            color: var(--color-text);
+            font-weight: 600;
+            font-size: 15px;
+            transition: var(--transition-base);
+        }
+
+        .ds-nav-item a:hover {
+            color: var(--color-primary);
+            padding-left: 4px;
+        }
+
+        /* Main Content */
+        .ds-main {
+            margin-left: 280px;
+            flex: 1;
+            padding: 4rem 5rem;
+        }
+
+        .ds-header {
+            margin-bottom: 5rem;
+        }
+
+        .ds-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-text);
+            font-family: 'Golos Text', sans-serif;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+
+        .ds-subtitle {
+            font-size: 18px;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .ds-section {
+            margin-bottom: 6rem;
+            scroll-margin-top: 4rem;
+        }
+
+        .ds-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--ds-border);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--color-text);
+        }
+
+        /* Color Grid */
+        .ds-color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .ds-color-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--ds-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .ds-color-swatch {
+            height: 140px;
+        }
+
+        .ds-color-info {
+            padding: 1.25rem;
+        }
+
+        .ds-color-name {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 0.25rem;
+        }
+
+        .ds-color-hex {
+            font-family: monospace;
+            font-size: 13px;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+        }
+
+        /* Typography */
+        .ds-font-card {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid var(--ds-border);
+            margin-bottom: 2rem;
+        }
+
+        .ds-type-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Component Demo */
+        .ds-preview {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--ds-border);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Shadow Grid */
+        .ds-shadow-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .ds-shadow-card {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 1024px) {
+            .ds-sidebar { display: none; }
+            .ds-main { margin-left: 0; padding: 2rem; }
+        }
+    </style>
+</head>
+<body class="ds-body">
+
+    <div class="ds-layout">
+        <aside class="ds-sidebar">
+            <div class="ds-logo">
+                <div class="ds-logo-square">M</div>
+                МегаМарт
+            </div>
+
+            <nav>
+                <div class="ds-nav-title">Основы</div>
+                <ul class="ds-nav-list">
+                    <li class="ds-nav-item"><a href="#colors">Цвета</a></li>
+                    <li class="ds-nav-item"><a href="#typography">Типографика</a></li>
+                    <li class="ds-nav-item"><a href="#shadows">Тени и Эффекты</a></li>
+                </ul>
+
+                <div class="ds-nav-title">Компоненты</div>
+                <ul class="ds-nav-list">
+                    <li class="ds-nav-item"><a href="#buttons">Кнопки</a></li>
+                    <li class="ds-nav-item"><a href="#cards">Карточки и Бенто</a></li>
+                    <li class="ds-nav-item"><a href="#elements">Элементы UI</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="ds-main">
+            <header class="ds-header">
+                <h1 class="ds-title">Дизайн-система</h1>
+                <p class="ds-subtitle">Визуальный стандарт и набор токенов для проекта МегаМарт. Разработано на базе анализа текущего интерфейса.</p>
+            </header>
+
+            <!-- Colors -->
+            <section id="colors" class="ds-section">
+                <h2 class="ds-section-title">Цвета</h2>
+                <div class="ds-color-grid">
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: var(--color-primary);"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Primary (Purple)</div>
+                            <div class="ds-color-hex">#7C3AED</div>
+                        </div>
+                    </div>
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: var(--color-accent);"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Accent (Orange)</div>
+                            <div class="ds-color-hex">#FF7A00</div>
+                        </div>
+                    </div>
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: var(--color-text);"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Text Primary</div>
+                            <div class="ds-color-hex">#111827</div>
+                        </div>
+                    </div>
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: var(--color-text-muted);"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Text Muted</div>
+                            <div class="ds-color-hex">#64748B</div>
+                        </div>
+                    </div>
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: var(--color-bg);"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Background</div>
+                            <div class="ds-color-hex">#f3f4f5</div>
+                        </div>
+                    </div>
+                    <div class="ds-color-card">
+                        <div class="ds-color-swatch" style="background: #1A1A1A;"></div>
+                        <div class="ds-color-info">
+                            <div class="ds-color-name">Dark</div>
+                            <div class="ds-color-hex">#1A1A1A</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Typography -->
+            <section id="typography" class="ds-section">
+                <h2 class="ds-section-title">Типографика</h2>
+                
+                <div class="ds-font-card">
+                    <span class="ds-type-label">Main Font Family (Golos Text)</span>
+                    <div style="font-family: 'Golos Text', sans-serif; font-size: 36px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;">
+                        Запускайте продажи в МегаМаркете
+                    </div>
+                    <div style="font-family: 'Golos Text', sans-serif; font-size: 24px; font-weight: 500; margin-top: 1rem;">
+                        Эффективные продажи на маркетплейсе
+                    </div>
+                </div>
+
+                <div class="ds-font-card">
+                    <span class="ds-type-label">Secondary / Body Usage (Golos Text)</span>
+                    <div style="font-family: 'Golos Text', sans-serif; font-size: 18px; line-height: 1.6; color: var(--color-text);">
+                        Мы предоставляем все инструменты для успешного старта и масштабирования вашего бизнеса. Гибкие условия и мощная аналитика помогут вам достичь новых вершин.
+                    </div>
+                </div>
+
+                <div class="ds-font-card">
+                    <span class="ds-type-label">Размеры в иллюстрациях (Micro-typography)</span>
+                    <div class="ds-preview" style="justify-content: flex-start; gap: 4rem; padding: 2rem;">
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.5rem;">TAG / TINY: 10px</div>
+                            <div class="bento-card__tag" style="margin: 0; background: #f1f5f9; padding: 4px 8px; border-radius: 4px; color: #64748b; width: fit-content;">АНАЛИТИКА</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.5rem;">DESCRIPTION: 11px</div>
+                            <div class="bento-card__desc" style="max-width: 150px;">Короткое описание для карточек в сетке.</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.5rem;">SIDE INFO: 13px</div>
+                            <div class="fc-breadcrumb" style="color: var(--color-text-muted); margin: 0;">Путь / Категория</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.5rem;">UI ELEMENT: 14px</div>
+                            <div class="fc-float-item" style="box-shadow: none; border: 1px solid var(--ds-border); position: relative; right: auto; bottom: auto; padding: 6px 12px;">Проверка качества</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.5rem;">TAG LABEL: 15px</div>
+                            <div class="fc-tag" style="box-shadow: none; border: 1px solid var(--ds-border); padding: 6px 16px;">Настройка</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shadows -->
+            <section id="shadows" class="ds-section">
+                <h2 class="ds-section-title">Тени и Эффекты</h2>
+                <div class="ds-shadow-grid">
+                    <div class="ds-shadow-card" style="box-shadow: var(--shadow-sm);">Shadow SM</div>
+                    <div class="ds-shadow-card" style="box-shadow: var(--shadow-md);">Shadow MD</div>
+                    <div class="ds-shadow-card" style="box-shadow: var(--shadow-lg);">Shadow LG</div>
+                    <div class="ds-shadow-card" style="box-shadow: var(--shadow-premium);">Shadow Premium</div>
+                </div>
+            </section>
+
+            <!-- Buttons -->
+            <section id="buttons" class="ds-section">
+                <h2 class="ds-section-title">Кнопки</h2>
+                <div class="ds-preview">
+                    <a href="#" class="btn-primary" style="margin: 0;">
+                        Начать работу
+                        <span class="btn-primary__play">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="white"><path d="M2.5 1.5L8.5 5L2.5 8.5V1.5Z"></path></svg>
+                        </span>
+                    </a>
+
+                    <div class="fc-tag fc-tag--orange" style="cursor: default;">Акцентная метка</div>
+                    <div class="fc-tag" style="cursor: default; border: 1px solid var(--ds-border);">Обычный тег</div>
+                </div>
+            </section>
+
+            <!-- Cards -->
+            <section id="cards" class="ds-section">
+                <h2 class="ds-section-title">Карточки и Бенто</h2>
+                <div class="ds-preview" style="background: #f8fafc; padding: 3rem;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; width: 100%;">
+                        <div class="bento-card bento-card--primary" style="grid-column: span 1; min-height: 240px;">
+                            <div class="bento-card__content">
+                                <h4 class="bento-card__title">Премиум статус</h4>
+                                <p class="bento-card__desc">Доступ ко всем инструментам аналитики и поддержки.</p>
+                            </div>
+                        </div>
+                        <div class="bento-card bento-card--white" style="grid-column: span 1; min-height: 240px;">
+                            <div class="bento-card__content">
+                                <h4 class="bento-card__title">Активные продажи</h4>
+                                <p class="ds-color-hex" style="font-family: inherit; font-size: 14px;">+45% рост во втором квартале</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- UI Elements -->
+            <section id="elements" class="ds-section">
+                <h2 class="ds-section-title">Элементы UI</h2>
+                <div class="ds-preview">
+                    <div class="fc-float-item">
+                        <div class="fc-check-box">✓</div>
+                        Проверка качества
+                    </div>
+                    <div class="fc-float-item" style="box-shadow: var(--shadow-md);">
+                        <div class="fc-check-box" style="background: var(--color-primary);">★</div>
+                        Лидер рынка
+                    </div>
+                    <div class="glass-box" style="position: relative; transform: none; box-shadow: var(--shadow-sm);">
+                        <div class="icon-3d-inner">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2L2 7L12 12L22 7L12 2Z"></path><path d="M2 17L12 22L22 17"></path><path d="M2 12L12 17L22 12"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
