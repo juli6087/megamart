@@ -247,6 +247,10 @@
             margin-top: 2.5rem;
         }
 
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
         /* ==========================================================================
            HERO SECTION
            ========================================================================== */
@@ -1397,6 +1401,7 @@
             background: white;
             border: 1px solid var(--color-border);
             border-radius: 16px;
+            padding: 1.5rem;
             overflow: hidden;
             box-shadow: var(--shadow-custom);
         }
@@ -5106,7 +5111,7 @@
         }
 
         .pricing-card-labels h4 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             color: #0F172A;
             margin-bottom: 3px;
@@ -5115,7 +5120,7 @@
         }
 
         .pricing-card-labels p {
-            font-size: 15px;
+            font-size: 14px;
             color: #64748B;
             font-weight: 500;
         }
@@ -5154,14 +5159,14 @@
         }
 
         .price-label {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             color: #1E293B;
             white-space: nowrap;
         }
 
         .price-val {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             color: #0F172A;
             font-family: 'Golos Text', sans-serif;
@@ -5170,7 +5175,7 @@
         }
 
         .price-val small {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             color: #94A3B8;
             margin-left: 6px;
@@ -5186,7 +5191,7 @@
             margin-top: 1.25rem;
             color: #F97316;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             cursor: pointer;
         }
 
@@ -5211,7 +5216,7 @@
         .pricing-dots-list li {
             position: relative;
             padding-left: 2rem;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 500;
             color: #334155;
         }
@@ -5390,7 +5395,7 @@
         }
 
         .ui-filter-main-text h4 {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             color: #1E293B;
             margin-bottom: 0px;
@@ -5398,7 +5403,7 @@
         }
 
         .ui-filter-main-text p {
-            font-size: 15px;
+            font-size: 14px;
             color: #94A3B8;
             font-weight: 500;
         }
@@ -5441,7 +5446,7 @@
         }
 
         .ui-filter-card-head span {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 700;
             color: #1E293B;
         }
@@ -5464,7 +5469,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             color: #334155;
         }
@@ -5542,7 +5547,7 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             color: #1E293B;
         }
@@ -5591,7 +5596,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             color: #1E293B;
             margin-top: 0.5rem;
@@ -5612,7 +5617,7 @@
         }
 
         .ui-filter-type-label {
-            font-size: 13px;
+            font-size: 11px;
             color: #ABB2BF;
             font-weight: 500;
         }
@@ -5650,7 +5655,7 @@
             border: 1px solid #E2E8F0;
             border-radius: 8px;
             padding: 8px 10px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             color: #1E293B;
         }
@@ -5659,7 +5664,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 16px;
+            font-size: 14px;
             color: #64748B;
             font-weight: 500;
         }
