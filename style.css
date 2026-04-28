@@ -243,6 +243,10 @@
             animation: flow-gradient 4s linear infinite;
         }
 
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+
         /* ==========================================================================
            HERO SECTION
            ========================================================================== */
@@ -1204,6 +1208,209 @@
             font-size: 10px;
             font-weight: 700;
             color: #D1D5DB;
+        }
+
+        /* Card Layout Variations */
+        .setting-card--split {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .setting-card__side-content {
+            flex: 1 1 300px;
+            padding: 4rem 3rem;
+            background: #F9FAFB;
+            border-right: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .setting-card__side-visual {
+            flex: 1.5 1 400px;
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .setting-card__desc {
+            font-size: 14px;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* SKU & Trading Offers */
+        .sku-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .sku-card {
+            background: #F9FAFB;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .sku-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: #9CA3AF;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .sku-label span {
+            color: var(--color-text);
+        }
+
+        .sku-list {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sku-color {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px #E5E7EB;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+
+        .sku-color:hover {
+            transform: scale(1.1);
+        }
+
+        .sku-color--active {
+            box-shadow: 0 0 0 1px var(--color-accent);
+        }
+
+        .sku-size-list {
+            display: flex;
+            gap: 8px;
+        }
+
+        .sku-size {
+            padding: 6px 14px;
+            background: white;
+            border: 1px solid #E5E7EB;
+            color: #4B5563;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+
+        .sku-size:hover {
+            border-color: var(--color-accent-light);
+            color: var(--color-accent);
+        }
+
+        .sku-size--active {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+            font-weight: 700;
+        }
+
+        /* Pricing Display */
+        .pricing-info-card {
+            background: #F9FAFB;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .pricing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #E5E7EB;
+            padding-bottom: 12px;
+        }
+
+        .pricing-row--final {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .pricing-label {
+            font-size: 12px;
+            color: #6B7280;
+            font-weight: 500;
+        }
+
+        .pricing-label--bold {
+            font-size: 14px;
+            color: var(--color-text);
+            font-weight: 700;
+        }
+
+        .pricing-value-old {
+            font-size: 12px;
+            color: #9CA3AF;
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+
+        .pricing-value-new {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-discount {
+            background: #EF4444;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .pricing-price {
+            font-size: 18px;
+            color: var(--color-text);
+            font-weight: 800;
+        }
+
+        /* Mockup Containers */
+        .mockup-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mockup-container--white {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-custom);
+        }
+
+        .mockup-img--premium {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.08));
+        }
+
+        .mockup-img--contain {
+            max-width: 100%;
+            object-fit: contain;
         }
 
         .font-row {

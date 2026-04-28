@@ -9,9 +9,7 @@
     <!-- Подключение шрифта Golos Text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Подключение иконок Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -988,75 +986,53 @@
                 </div>
             </div>
 
-            <div class="config-grid" style="margin-top: 2.5rem;">
+            <div class="config-grid mt-10">
 
-                <!-- 1. Навигация и Дизайн карточки (Широкий блок) -->
-                <div class="setting-card col-span-12"
-                    style="padding: 0; display: flex; flex-wrap: wrap; overflow: hidden;">
-                    <div
-                        style="flex: 1 1 300px; padding: 4rem 3rem; background: #F9FAFB; border-right: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: center;">
+                <!-- 1. Навигация и Дизайн карточки (Широкий блок)
+                <div class="setting-card col-span-12 setting-card--split">
+                    <div class="setting-card__side-content">
                         <div class="setting-card__header">
-                            <div class="setting-icon setting-icon--blue"><i data-lucide="navigation"
-                                    style="width: 16px;"></i></div>
+                            <div class="setting-icon setting-icon--blue">
+                                <i data-lucide="navigation" style="width: 16px;"></i>
+                            </div>
                             <h4 class="setting-title">Якорная навигация</h4>
                         </div>
-                        <p
-                            style="font-size: 15px; color: var(--color-text-muted); font-weight: 500; line-height: 1.6; margin-bottom: 0;">
+                        <p class="setting-card__desc">
                             Карточка-лендинг с интуитивной якорной навигацией помогает клиенту быстро выбрать товар и
                             легко найти нужную информацию, не прокручивая длинные страницы.
                         </p>
                     </div>
-                    <div
-                        style="flex: 1.5 1 400px; padding: 2.5rem; display: flex; align-items: center; justify-content: center; background: white;">
-                        <img src="assets/navitem.png"
-                            style="width: 100%; max-height: 480px; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.06));"
-                            alt="Якорная навигация">
+                    <div class="setting-card__side-visual">
+                        <img src="assets/navitem.png" class="setting-card__mockup-img" alt="Якорная навигация">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- 2. Торговые предложения (SKU) -->
                 <div class="setting-card md-col-span-7 col-span-12">
                     <div class="setting-card__header">
-                        <div class="setting-icon setting-icon--orange"><i data-lucide="layers" style="width: 16px;"></i>
+                        <div class="setting-icon setting-icon--orange">
+                            <i data-lucide="layers" style="width: 16px;"></i>
                         </div>
                         <h4 class="setting-title">Торговые предложения (SKU)</h4>
                     </div>
-                    <p
-                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 20px;">
+                    <p class="setting-card__desc">
                         Объединяйте вариации в одной карточке. Цвета, размеры, фасовки.
                     </p>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
-                        <div
-                            style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
-                            <span
-                                style="font-size: 10px; font-weight: 600; color: #9CA3AF; margin-bottom: 12px; display: block;">Цвет:
-                                <span style="color: var(--color-text);">Чёрный</span></span>
-                            <div style="display: flex; gap: 10px;">
-                                <div
-                                    style="width: 28px; height: 28px; border-radius: 8px; background: #111827; border: 2px solid white; box-shadow: 0 0 0 1px var(--color-accent); cursor: pointer;">
-                                </div>
-                                <div
-                                    style="width: 28px; height: 28px; border-radius: 8px; background: #E5E7EB; border: 2px solid white; box-shadow: 0 0 0 1px #E5E7EB; cursor: pointer;">
-                                </div>
-                                <div
-                                    style="width: 28px; height: 28px; border-radius: 8px; background: #3B82F6; border: 2px solid white; box-shadow: 0 0 0 1px #E5E7EB; cursor: pointer;">
-                                </div>
+                    <div class="sku-grid">
+                        <div class="sku-card">
+                            <span class="sku-label">Цвет: <span>Чёрный</span></span>
+                            <div class="sku-list">
+                                <div class="sku-color sku-color--active" style="background: #111827;"></div>
+                                <div class="sku-color" style="background: #E5E7EB;"></div>
+                                <div class="sku-color" style="background: #3B82F6;"></div>
                             </div>
                         </div>
-                        <div
-                            style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
-                            <span
-                                style="font-size: 10px; font-weight: 600; color: #9CA3AF; margin-bottom: 12px; display: block;">Размер:</span>
-                            <div style="display: flex; gap: 8px;">
-                                <div
-                                    style="padding: 6px 14px; background: white; border: 1px solid var(--color-accent); color: var(--color-accent); font-size: 11px; font-weight: 700; border-radius: 8px; cursor: pointer;">
-                                    S</div>
-                                <div
-                                    style="padding: 6px 14px; background: white; border: 1px solid #E5E7EB; color: #4B5563; font-size: 11px; font-weight: 600; border-radius: 8px; cursor: pointer;">
-                                    M</div>
-                                <div
-                                    style="padding: 6px 14px; background: white; border: 1px solid #E5E7EB; color: #4B5563; font-size: 11px; font-weight: 600; border-radius: 8px; cursor: pointer;">
-                                    L</div>
+                        <div class="sku-card">
+                            <span class="sku-label">Размер:</span>
+                            <div class="sku-size-list">
+                                <div class="sku-size sku-size--active">S</div>
+                                <div class="sku-size">M</div>
+                                <div class="sku-size">L</div>
                             </div>
                         </div>
                     </div>
@@ -1070,27 +1046,19 @@
                         </div>
                         <h4 class="setting-title">Акции и типы цен</h4>
                     </div>
-                    <p
-                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 20px;">
+                    <p class="setting-card__desc  ">
                         Создавайте персональные цены, оптовые скидки и таймеры акций прямо на странице товара.
                     </p>
-                    <div
-                        style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
-                        <div
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px dashed #E5E7EB; padding-bottom: 12px;">
-                            <span style="font-size: 12px; color: #6B7280; font-weight: 500;">Розничная</span>
-                            <span
-                                style="font-size: 12px; color: #9CA3AF; text-decoration: line-through; font-weight: 600;">1
-                                450 ₽</span>
+                    <div class="pricing-info-card">
+                        <div class="pricing-row">
+                            <span class="pricing-label">Розничная</span>
+                            <span class="pricing-value-old">1 450 ₽</span>
                         </div>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-size: 14px; color: var(--color-text); font-weight: 700;">Ваша цена</span>
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <span
-                                    style="background: #EF4444; color: white; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 800;">-100
-                                    ₽</span>
-                                <span style="font-size: 18px; color: var(--color-text); font-weight: 800;">1 350
-                                    ₽</span>
+                        <div class="pricing-row pricing-row--final">
+                            <span class="pricing-label--bold">Ваша цена</span>
+                            <div class="pricing-value-new">
+                                <span class="pricing-discount">-100 ₽</span>
+                                <span class="pricing-price">1 350 ₽</span>
                             </div>
                         </div>
                     </div>
@@ -1099,61 +1067,16 @@
                 <!-- 4. Наборы и комплекты -->
                 <div class="setting-card col-span-12">
                     <div class="setting-card__header">
-                        <div class="setting-icon setting-icon--pink"><i data-lucide="package-plus"
-                                style="width: 16px;"></i>
+                        <div class="setting-icon setting-icon--pink">
+                            <i data-lucide="package-plus" style="width: 16px;"></i>
                         </div>
                         <h4 class="setting-title">Наборы и комплекты</h4>
                     </div>
-                    <p
-                        style="font-size: 12px; color: var(--color-text-muted); font-weight: 500; line-height: 1.5; margin-bottom: 24px; max-width: 650px;">
+                    <p class="setting-card__desc  ">
                         Фиксированные комплекты со скидкой или настраиваемые наборы для увеличения среднего чека.
                     </p>
-                    <div
-                        style="background: #F9FAFB; border: 1px solid var(--color-border); border-radius: 16px; padding: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-                        <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                            <!-- Main Item -->
-                            <div style="text-align: center;">
-                                <div
-                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-                                    <i data-lucide="monitor" style="width: 28px; color: var(--color-primary);"></i>
-                                </div>
-                                <span
-                                    style="font-size: 10px; font-weight: 700; color: var(--color-text);">Монитор</span>
-                            </div>
-                            <i data-lucide="plus" style="width: 16px; color: #D1D5DB;"></i>
-                            <!-- Accessory 1 -->
-                            <div style="text-align: center;">
-                                <div
-                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-                                    <i data-lucide="keyboard" style="width: 28px; color: #9CA3AF;"></i>
-                                </div>
-                                <span style="font-size: 10px; font-weight: 600; color: #6B7280;">Клавиатура</span>
-                            </div>
-                            <i data-lucide="plus" style="width: 16px; color: #D1D5DB;"></i>
-                            <!-- Accessory 2 -->
-                            <div style="text-align: center;">
-                                <div
-                                    style="width: 70px; height: 70px; background: white; border-radius: 14px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-                                    <i data-lucide="mouse" style="width: 28px; color: #9CA3AF;"></i>
-                                </div>
-                                <span style="font-size: 10px; font-weight: 600; color: #6B7280;">Мышь</span>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
-                            <div>
-                                <div
-                                    style="font-size: 12px; color: #9CA3AF; text-decoration: line-through; font-weight: 600; margin-bottom: 2px;">
-                                    24 500 ₽</div>
-                                <div style="font-size: 22px; font-weight: 800; color: var(--color-text);">19 900 ₽</div>
-                                <div style="font-size: 11px; color: #10B981; font-weight: 700; margin-top: 6px;">Вы
-                                    экономите 4 600 ₽</div>
-                            </div>
-                            <div
-                                style="background: var(--color-accent); color: white; padding: 12px 24px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 6px 15px rgba(247,145,61,0.2); transition: all 0.3s;">
-                                В корзину
-                            </div>
-                        </div>
+                    <div class="mockup-container mockup-container--white">
+                        <img src="assets/naborItem.png" class="mockup-img--premium" alt="Наборы и комплекты">
                     </div>
                 </div>
             </div>
