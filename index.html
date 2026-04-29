@@ -1123,6 +1123,644 @@
         </div>
     </section>
 
+    <!-- БЛОК: Типы цен для разных групп клиентов (REF: STANDARDIZED) -->
+    <div class="cp-section">
+        <div class="cp-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Типы цен для разных групп клиентов</h2>
+                <p class="ds-section-desc">Возможность отображать определенный тип цены определенным группам
+                    пользователей. Золотой клиент видит цены уже со своими скидками.</p>
+            </div>
+
+            <div class="cp-grid">
+                <!-- Карта: Как это работает -->
+                <div class="cp-card cp-card--how">
+                    <div class="cp-card-title-row">
+                        <div class="ds-icon-box">
+                            <i data-lucide="settings"></i>
+                        </div>
+                        <h4 class="ds-card-title">Как это работает</h4>
+                    </div>
+
+                    <div class="cp-client-list">
+                        <div class="cp-client-item">
+                            <div class="cp-client-icon-box" style="background: #f1f5f9; color: #64748b;">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="cp-client-info">
+                                <div class="cp-client-name">Розничные покупатели</div>
+                                <div class="cp-client-label">Базовые цены</div>
+                            </div>
+                        </div>
+
+                        <div class="cp-client-item">
+                            <div class="cp-client-icon-box" style="background: #e0e7ff; color: #4f46e5;">
+                                <i data-lucide="hard-drive"></i>
+                            </div>
+                            <div class="cp-client-info">
+                                <div class="cp-client-name">Профессионалы</div>
+                                <div class="cp-client-label">Проф. цены</div>
+                            </div>
+                            <div class="cp-client-percentage">-5%</div>
+                        </div>
+
+                        <div class="cp-client-item">
+                            <div class="cp-client-icon-box" style="background: #dcfce7; color: #16a34a;">
+                                <i data-lucide="truck"></i>
+                            </div>
+                            <div class="cp-client-info">
+                                <div class="cp-client-name">Оптовики</div>
+                                <div class="cp-client-label">Оптовые цены</div>
+                            </div>
+                            <div class="cp-client-percentage">-10%</div>
+                        </div>
+
+                        <div class="cp-client-item">
+                            <div class="cp-client-icon-box" style="background: #ede9fe; color: #7c3aed;">
+                                <i data-lucide="crown"></i>
+                            </div>
+                            <div class="cp-client-info">
+                                <div class="cp-client-name">VIP-клиенты</div>
+                                <div class="cp-client-label">VIP цены</div>
+                            </div>
+                            <div class="cp-client-percentage">-15%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="cp-card-right-stack">
+                    <!-- Карта: Преимущества -->
+                    <div class="cp-card cp-card--benefits">
+                        <div class="cp-card-title-row">
+                            <div class="ds-icon-box">
+                                <i data-lucide="star"></i>
+                            </div>
+                            <h4 class="ds-card-title">Преимущества</h4>
+                        </div>
+                        <div class="cp-benefits-list">
+                            <div class="cp-benefit-item">
+                                <div class="cp-benefit-num">1</div>
+                                <div class="cp-benefit-text">Автоматическое определение типа цены по группе пользователя
+                                </div>
+                            </div>
+                            <div class="cp-benefit-item">
+                                <div class="cp-benefit-num">2</div>
+                                <div class="cp-benefit-text">Синхронизация с 1С — типы цен загружаются автоматически
+                                </div>
+                            </div>
+                            <div class="cp-benefit-item">
+                                <div class="cp-benefit-num">3</div>
+                                <div class="cp-benefit-text">Гибкая настройка скидок для каждой группы</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта: Preview -->
+                    <div class="cp-card cp-card--preview">
+                        <div class="cp-prices">
+                            <div class="cp-price-row">
+                                <span class="cp-price-label">Базовая цена:</span>
+                                <span class="cp-price-val">71 490 <small>руб./шт.</small></span>
+                            </div>
+                            <div class="cp-price-row cp-price-row--accent">
+                                <span class="cp-price-label">Оптовая цена:</span>
+                                <span class="cp-price-val">69 990 <small>руб./шт.</small></span>
+                            </div>
+                            <div class="cp-price-more">Ещё (2)...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner -->
+                <div class="cp-card cp-card--banner">
+                    <div class="cp-banner-icon-box">
+                        <i data-lucide="bookmark"></i>
+                    </div>
+                    <div class="cp-banner-content">
+                        <h4 class="ds-card-title">Редакция «Бизнес» и выше</h4>
+                        <p class="ds-card-desc">Для использования множественных типов цен</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- БЛОК: Корзина и оформление заказа -->
+    <section class="cart-section" id="cart">
+        <div class="bento-v2-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Удобная корзина и быстрое оформление</h2>
+                <p class="ds-section-desc">Минимум шагов от добавления товара до оплаты. Адаптируйте процесс покупки под
+                    свою аудиторию: используйте гибкие настройки для оптовых и розничных клиентов, предлагайте скидки и
+                    упрощайте путь клиента к оплате.</p>
+            </div>
+
+            <div class="cart-grid">
+                <!-- Карта 1: Розничная корзина -->
+                <div class="vitrine-card vitrine-card--classic cart-card--retail">
+                    <div class="vitrine-card__top ds-card-header">
+                        <div class="vitrine-card__num ds-icon-box"
+                            style="background: #FFF0E6; color: #FF7A00; border-radius: 16px; width: 48px; height: 48px;">
+                            <i data-lucide="shopping-cart" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div class="vitrine-card__info">
+                            <h4 class="ds-card-title" style="margin-bottom: 2px; font-size: 20px;">Розничная корзина
+                            </h4>
+                            <p class="ds-card-desc" style="margin-bottom: 0; font-size: 14px; color: #64748B;">Для B2C
+                                покупателей</p>
+                        </div>
+                    </div>
+                    <div class="vitrine-card__mockup">
+                        <img src="assets/cor1.png" alt="Retail Cart" class="vitrine-card__img">
+                    </div>
+                </div>
+
+                <!-- Карта 2: Оптовая корзина -->
+                <div class="vitrine-card vitrine-card--image cart-card--wholesale">
+                    <div class="vitrine-card__top ds-card-header">
+                        <div class="vitrine-card__num ds-icon-box"
+                            style="background: #FFF0E6; color: #FF7A00; border-radius: 16px; width: 48px; height: 48px;">
+                            <i data-lucide="layers" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div class="vitrine-card__info">
+                            <h4 class="ds-card-title" style="margin-bottom: 2px; font-size: 20px;">Оптовая корзина</h4>
+                            <p class="ds-card-desc" style="margin-bottom: 0; font-size: 14px; color: #64748B;">Для B2B
+                                менеджеров</p>
+                        </div>
+                    </div>
+                    <div class="vitrine-card__mockup">
+                        <img src="assets/cor2.png" alt="Wholesale Cart" class="vitrine-card__img">
+                    </div>
+                </div>
+
+                <!-- Карта 3: Боковое меню -->
+                <div class="cart-card cart-card--handy">
+                    <div class="cart-handy__info">
+                        <div class="ds-card-header">
+                            <div class="ds-icon-box">
+                                <i data-lucide="rocket"></i>
+                            </div>
+                            <h4 class="ds-card-title" style="font-size: 18px;">Всегда под рукой</h4>
+                        </div>
+                        <p class="ds-card-desc">Корзина и избранное доступны в один клик с любой страницы.</p>
+
+                        <div class="cart-features-simple">
+                            <div class="cart-feature-simple-item">
+                                <i data-lucide="panel-right"></i>
+                                <div>
+                                    <strong>Умное меню</strong>
+                                    <span>Выдвижная панель всегда рядом.</span>
+                                </div>
+                            </div>
+                            <div class="cart-feature-simple-item">
+                                <i data-lucide="layers"></i>
+                                <div>
+                                    <strong>Центр управления</strong>
+                                    <span>Корзина и избранное в одном месте.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-handy__visual">
+                        <div class="mini-sidebar">
+                            <div class="mini-sidebar__item">
+                                <i data-lucide="shopping-cart"></i>
+                                <span class="mini-sidebar__badge">4</span>
+                            </div>
+                            <div class="mini-sidebar__item">
+                                <i data-lucide="heart"></i>
+                                <span class="mini-sidebar__badge">2</span>
+                            </div>
+                            <div class="mini-sidebar__item">
+                                <i data-lucide="layers"></i>
+                                <span class="mini-sidebar__badge">2</span>
+                            </div>
+                            <div class="mini-sidebar__item">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 4: Конверсия -->
+                <div class="cart-card cart-card--conversion">
+                    <div class="ds-card-header">
+                        <div class="ds-icon-box" style="background: #ecfdf5; color: #10b981;">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h4 class="ds-card-title">Рост конверсии</h4>
+                    </div>
+                    <p class="ds-card-desc">Инструменты для быстрого завершения покупки.</p>
+
+                    <div class="cart-feature-list">
+                        <div class="cart-feature-item">
+                            <div class="cart-feature-icon-wrap"><i data-lucide="ticket"></i></div>
+                            <div class="cart-feature-info">
+                                <div class="cart-feature-title">Промокоды</div>
+                                <div class="cart-feature-text">Мгновенный расчет скидки.</div>
+                            </div>
+                        </div>
+                        <div class="cart-feature-item">
+                            <div class="cart-feature-icon-wrap"><i data-lucide="zap"></i></div>
+                            <div class="cart-feature-info">
+                                <div class="cart-feature-title">1 клик</div>
+                                <div class="cart-feature-text">Покупка по телефону.</div>
+                            </div>
+                        </div>
+                        <div class="cart-feature-item">
+                            <div class="cart-feature-icon-wrap"><i data-lucide="truck"></i></div>
+                            <div class="cart-feature-info">
+                                <div class="cart-feature-title">Доставка</div>
+                                <div class="cart-feature-text">Выбор ПВЗ в корзине.</div>
+                            </div>
+                        </div>
+                        <div class="cart-feature-item">
+                            <div class="cart-feature-icon-wrap"><i data-lucide="wallet"></i></div>
+                            <div class="cart-feature-info">
+                                <div class="cart-feature-title">Оплата</div>
+                                <div class="cart-feature-text">СБП, карты и счета.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- БЛОК: Доставка (Продолжение секции корзины) -->
+            <div class="delivery-container" style="margin-top: 40px; margin-bottom: 60px;">
+                <!-- Текстовая отбивка в стиле дизайн-системы -->
+                <div class="ds-section-header"
+                    style="margin-bottom: 32px; padding-top: 40px; border-top: 1px solid var(--color-border);">
+                    <p class="ds-section-desc">
+                        От самовывоза до международной доставки. Ваши покупатели выбирают удобный способ — система
+                        автоматически рассчитывает стоимость.
+                    </p>
+                </div>
+
+                <!-- Основная карточка выбора доставки -->
+                <div class="delivery-main-card">
+                    <!-- Сетка методов -->
+                    <div class="delivery-methods-grid">
+                        <!-- Почта России (Активная) -->
+                        <div class="delivery-method-card delivery-method-card--active">
+                            <div class="delivery-method-icon" style="background: #0055A6; color: white;">
+                                <i data-lucide="package" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">Почта России</span>
+                        </div>
+
+                        <!-- СДЭК -->
+                        <div class="delivery-method-card">
+                            <div class="delivery-method-icon" style="background: #EBF7EE; color: #00A650;">
+                                <i data-lucide="package-check" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">СДЭК</span>
+                        </div>
+
+                        <!-- DPD -->
+                        <div class="delivery-method-card">
+                            <div class="delivery-method-icon" style="background: #FEF2F2; color: #DC2626;">
+                                <i data-lucide="send" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">DPD</span>
+                        </div>
+
+                        <!-- ТК -->
+                        <div class="delivery-method-card">
+                            <div class="delivery-method-icon" style="background: #F3F4F6; color: #4B5563;">
+                                <i data-lucide="truck" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">ТК</span>
+                        </div>
+
+                        <!-- Самовывоз -->
+                        <div class="delivery-method-card">
+                            <div class="delivery-method-icon" style="background: #F3F4F6; color: #4B5563;">
+                                <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">Самовывоз</span>
+                        </div>
+
+                        <!-- Яндекс Доставка -->
+                        <div class="delivery-method-card">
+                            <div class="delivery-method-icon" style="background: #EA580C; color: white;">
+                                <i data-lucide="package-open" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <span class="delivery-method-label">Яндекс Доставка</span>
+                        </div>
+                    </div>
+
+                    <!-- Панель информации (Справа) -->
+                    <div class="delivery-info-panel">
+                        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                            <div
+                                style="width: 36px; height: 36px; background: #0055A6; color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="package" style="width: 18px; height: 18px;"></i>
+                            </div>
+                            <h4 style="font-size: 20px; font-weight: 800; color: var(--color-text); margin: 0;">Почта
+                                России
+                            </h4>
+                        </div>
+
+                        <p
+                            style="font-size: 14px; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 32px; font-weight: 500;">
+                            Тарифы на услуги почтовых и курьерских служб изменяются в зависимости от веса с определенным
+                            шагом —
+                            обычно 500 или 1000 грамм.
+                        </p>
+
+                        <div style="display: flex; gap: 40px;">
+                            <div>
+                                <div style="font-size: 12px; color: #9CA3AF; font-weight: 700; margin-bottom: 8px;">
+                                    Стоимость:
+                                </div>
+                                <div style="font-size: 20px; font-weight: 800; color: var(--color-text);">75 руб</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 12px; color: #9CA3AF; font-weight: 700; margin-bottom: 8px;">Срок
+                                    доставки:</div>
+                                <div style="font-size: 20px; font-weight: 800; color: var(--color-text);">от 9 до 15
+                                    дней</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Сетка настроек (4 карточки) -->
+                <div class="delivery-settings-grid">
+                    <div class="delivery-setting-card">
+                        <div class="delivery-setting-icon"><i data-lucide="calculator" style="width: 22px;"></i></div>
+                        <div>
+                            <h4
+                                style="font-size: 16px; font-weight: 800; color: var(--color-text); margin-bottom: 4px;">
+                                Калькулятор стоимости</h4>
+                            <p
+                                style="font-size: 13px; color: var(--color-text-muted); line-height: 1.5; font-weight: 500; margin: 0;">
+                                Автоматический расчет стоимости доставки по габаритам посылки и географии</p>
+                        </div>
+                    </div>
+
+                    <div class="delivery-setting-card">
+                        <div class="delivery-setting-icon"><i data-lucide="map" style="width: 22px;"></i></div>
+                        <div>
+                            <h4
+                                style="font-size: 16px; font-weight: 800; color: var(--color-text); margin-bottom: 4px;">
+                                Зоны
+                                доставки</h4>
+                            <p
+                                style="font-size: 13px; color: var(--color-text-muted); line-height: 1.5; font-weight: 500; margin: 0;">
+                                Гибкая настройка тарифов по регионам, городам и районам</p>
+                        </div>
+                    </div>
+
+                    <div class="delivery-setting-card">
+                        <div class="delivery-setting-icon"><i data-lucide="clock" style="width: 22px;"></i></div>
+                        <div>
+                            <h4
+                                style="font-size: 16px; font-weight: 800; color: var(--color-text); margin-bottom: 4px;">
+                                Сроки
+                                доставки</h4>
+                            <p
+                                style="font-size: 13px; color: var(--color-text-muted); line-height: 1.5; font-weight: 500; margin: 0;">
+                                Отображение примерных сроков для каждого способа доставки</p>
+                        </div>
+                    </div>
+
+                    <div class="delivery-setting-card">
+                        <div class="delivery-setting-icon"><i data-lucide="globe" style="width: 22px;"></i></div>
+                        <div>
+                            <h4
+                                style="font-size: 16px; font-weight: 800; color: var(--color-text); margin-bottom: 4px;">
+                                Международная доставка</h4>
+                            <p
+                                style="font-size: 13px; color: var(--color-text-muted); line-height: 1.5; font-weight: 500; margin: 0;">
+                                Поддержка национальных почт стран СНГ и международных служб</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Баннер: Автоматический калькулятор -->
+                <div class="calculator-banner">
+                    <div class="calculator-header">
+                        <div
+                            style="width: 56px; height: 56px; background: var(--color-accent); color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(255, 122, 0, 0.2);">
+                            <i data-lucide="calculator" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <div>
+                            <h4
+                                style="font-size: 22px; font-weight: 800; color: var(--color-text); margin-bottom: 4px;">
+                                Автоматический калькулятор</h4>
+                            <div style="font-size: 14px; color: var(--color-text-muted); font-weight: 500;">Стоимость
+                                рассчитывается мгновенно</div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-stats">
+                        <div class="calculator-stat-item">
+                            <span class="calculator-stat-label">Габариты</span>
+                            <span class="calculator-stat-value">30×20×15 см</span>
+                        </div>
+                        <div class="calculator-stat-item">
+                            <span class="calculator-stat-label">Город</span>
+                            <span class="calculator-stat-value">Москва</span>
+                        </div>
+                        <div class="calculator-stat-item">
+                            <span class="calculator-stat-label">Стоимость</span>
+                            <span class="calculator-stat-value calculator-stat-value--accent">от 290 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM REFACTORED) -->
+    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
+    <section class="section mr-section" id="multi-region">
+        <div class="ds-section-header" style="margin-bottom: 56px;">
+            <h2 class="ds-section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span></h2>
+            <p class="ds-section-desc">
+                Масштабироваться проще, чем кажется. Открывайте филиалы в других городах, новые точки самовывоза и
+                управляйте остатками на складах вместе с готовым функционалом МегаМаркет.
+            </p>
+        </div>
+
+        <div class="config-grid">
+            <!-- 1. Интерактивная карта (Широкая - 7) -->
+            <div class="setting-card col-span-12 md-col-span-7 mr-map">
+                <div class="mr-map__grid-layer"></div>
+                <div class="mr-map__diagonal-layer"></div>
+
+                <div class="mr-map__badge">
+                    <div class="mr-map__badge-dot"></div>
+                    Одна точка или целая сеть
+                </div>
+
+                <div class="mr-map__pin-wrap">
+                    <i data-lucide="map-pin" class="mr-map__pin-icon"></i>
+                    <div class="mr-map__pin-center"></div>
+                </div>
+
+                <div class="mr-map__dot" style="top: 25%; left: 20%; width: 14px; height: 14px; opacity: 0.5;"></div>
+                <div class="mr-map__dot" style="top: 20%; right: 25%; width: 12px; height: 12px; opacity: 0.4;"></div>
+                <div class="mr-map__dot" style="bottom: 25%; left: 25%; width: 14px; height: 14px; opacity: 0.5;"></div>
+                <div class="mr-map__dot" style="bottom: 15%; right: 30%; width: 10px; height: 10px; opacity: 0.6;"></div>
+            </div>
+
+            <!-- 2. Список магазинов (Узкий - 5) -->
+            <div class="setting-card col-span-12 md-col-span-5 mr-stores">
+                <div class="mr-stores__header">
+                    <div class="mr-stores__breadcrumbs">Главная / Наши магазины</div>
+                    <h4 class="mr-stores__title">НАШИ МАГАЗИНЫ</h4>
+                </div>
+
+                <div class="mr-stores__list">
+                    <div class="mr-stores__item">
+                        <div class="mr-stores__row">
+                            <div class="mr-stores__radio mr-stores__radio--active">
+                                <div class="mr-stores__radio-inner"></div>
+                            </div>
+                            <div class="mr-stores__info">
+                                <div class="mr-stores__name">
+                                    <span class="mr-stores__name-prefix">Торговый центр</span> Триумфальный
+                                </div>
+                                <div class="mr-stores__address">
+                                    Москва, ул. Вавилова, 66<br>тел. +7 (495) 978-30-08<br>
+                                    <span class="mr-stores__hours">10:00-21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-stores__item mr-stores__item--muted">
+                        <div class="mr-stores__row">
+                            <div class="mr-stores__radio"></div>
+                            <div class="mr-stores__info">
+                                <div class="mr-stores__name">
+                                    <span class="mr-stores__name-prefix">Торговый центр</span> Акс
+                                </div>
+                                <div class="mr-stores__address">
+                                    Москва, Измайловское ш., 71а<br>
+                                    <span class="mr-stores__hours--muted">10:00-22:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Скриншот интерфейса (Узкая - 5) -->
+            <div class="setting-card col-span-12 md-col-span-5 mr-screenshot">
+                <img src="assets/iros.png" alt="Interface Screenshot" class="mr-screenshot__img">
+            </div>
+
+            <!-- 4. Выбор города и Чеклист (Широкая - 7) -->
+            <div class="col-span-12 md-col-span-7 mr-city-col">
+                <div class="setting-card mr-city">
+                    <div class="mr-city__header">
+                        <i data-lucide="globe" class="mr-city__icon"></i>
+                        <div class="mr-city__header-content">
+                            <h4 class="mr-city__title">Ваш город?</h4>
+                            <span class="mr-city__subtitle">ВЫБЕРИТЕ ИЗ СПИСКА</span>
+                        </div>
+                    </div>
+
+                    <div class="mr-city__grid">
+                        <div class="mr-city__item mr-city__item--active">
+                            <div class="mr-city__dot"></div> 
+                            <span class="mr-city__name">Москва</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Санкт-Петербург</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Владивосток</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Волгоград</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Иркутск</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Казань</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Курск</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div> 
+                            <span class="mr-city__name">Липецк</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting-card mr-checklist">
+                    <div class="mr-checklist__badge">ВЫБОР ГОРОДА ИЗМЕНЯЕТ</div>
+                    <div class="mr-checklist__grid">
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Цены и остатки</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Контакты</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Акции и новости</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Формат названия</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Нижние модули (4 шт) -->
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="archive" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Многоскладовость</h4>
+                <p class="mr-feature__desc">Управление остатками на складах</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="store" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Пункты выдачи</h4>
+                <p class="mr-feature__desc">Любое количество точек самовывоза</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="truck" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Расчёт доставки</h4>
+                <p class="mr-feature__desc">Авторасчет по зонам и тарифам</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="refresh-cw" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Синхронизация</h4>
+                <p class="mr-feature__desc">Автообновление остатков из 1С</p>
+            </div>
+        </div>
+    </section>
+
     <script>
 
 
