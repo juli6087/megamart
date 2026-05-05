@@ -24,8 +24,7 @@
     <section class="hero" id="hero">
         <!-- Баннер МегаМарт -->
         <div class="hero__banner">
-            <video src="assets/video.mp4" autoplay loop muted playsinline
-                style="display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;"></video>
+            <video class="hero__video" src="assets/video.mp4" autoplay loop muted playsinline></video>
         </div>
 
         <div class="hero__header">
@@ -42,35 +41,35 @@
         <div class="hero__benefits">
             <div class="hero__benefit">
                 <div class="hero__benefit-icon">
-                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                    <i data-lucide="check" class="hero__benefit-icon-i"></i>
                 </div>
                 <span>Без разработки</span>
             </div>
             <div class="hero__benefit">
                 <div class="hero__benefit-icon">
-                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                    <i data-lucide="check" class="hero__benefit-icon-i"></i>
                 </div>
                 <span>Без сложных настроек</span>
             </div>
             <div class="hero__benefit">
                 <div class="hero__benefit-icon">
-                    <i data-lucide="check" style="width: 14px; height: 14px; stroke-width: 3;"></i>
+                    <i data-lucide="check" class="hero__benefit-icon-i"></i>
                 </div>
                 <span>Без рисков</span>
             </div>
         </div>
 
         <!-- Кнопка действия -->
-        <a href="#benefits" class="btn-primary">
+        <a  class="btn-primary" href="https://megamart.redsign.ru/">
             Смотреть демо-версию
             <div class="btn-primary__play">
-                <i data-lucide="play" style="width: 12px; height: 12px; fill: currentColor;"></i>
+                <i data-lucide="play" class="btn-primary__play-icon"></i>
             </div>
         </a>
     </section>
 
-    <section class="v2-benefits-section">
-        <div class="v2-container">
+    <section class="benefits-section">
+        <div class="benefits-container">
             <!-- Мокап интерфейса (перенесен из Hero) -->
             <div class="hero__mockup-container" style="margin-bottom: 1.25rem;">
                 <img src="assets/moc1.png" alt="Interface Mockup" class="hero__mockup-img">
@@ -286,9 +285,9 @@
     <!-- БЛОК С ЦИТАТОЙ: Философия продукта -->
     <section class="quote-section">
         <div class="bento-v2-container">
-            <div class="quote-section__header ds-section-header">
-                <h2 class="quote-section__title ds-section-title">Философия продукта</h2>
-                <p class="quote-section__subtitle ds-section-desc">Опыт, заложенный в основу каждой функции и каждого
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Философия продукта</h2>
+                <p class="ds-section-desc">Опыт, заложенный в основу каждой функции и каждого
                     пикселя</p>
             </div>
 
@@ -331,11 +330,11 @@
         <div class="bento-v2-container">
 
             <!-- Шапка -->
-            <div class="vitrine-section__header ds-section-header">
-                <h2 class="vitrine-section__title ds-section-title">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">
                     Только вам решать, как выглядит <br><span class="text-brand-purple">ваш магазин</span>
                 </h2>
-                <p class="vitrine-section__subtitle ds-section-desc">
+                <p class="ds-section-desc">
                     От функционального каталога до имиджевой витрины. Выберите концепцию, которая подчеркнет
                     уникальность вашего бренда.
                 </p>
@@ -349,8 +348,8 @@
                     <div class="vitrine-card__top ds-card-header">
                         <span class="vitrine-card__num ds-icon-box">01</span>
                         <div class="vitrine-card__info">
-                            <div class="vitrine-card__name ds-card-title">Классический вид</div>
-                            <div class="vitrine-card__desc ds-card-desc">Акцент на товары и каталог</div>
+                            <div class="ds-card-title">Классический вид</div>
+                            <div class="ds-card-desc">Акцент на товары и каталог</div>
                         </div>
                     </div>
                     <div class="vitrine-card__mockup">
@@ -363,8 +362,8 @@
                     <div class="vitrine-card__top ds-card-header">
                         <span class="vitrine-card__num vitrine-card__num--purple ds-icon-box">02</span>
                         <div class="vitrine-card__info">
-                            <div class="vitrine-card__name ds-card-title">Яркая витрина</div>
-                            <div class="vitrine-card__desc ds-card-desc">Акцент на имидж и бренд</div>
+                            <div class="ds-card-title">Яркая витрина</div>
+                            <div class="ds-card-desc">Акцент на имидж и бренд</div>
                         </div>
                     </div>
                     <div class="vitrine-card__mockup">
@@ -382,11 +381,11 @@
         <div class="bento-v2-container">
 
             <!-- Шапка -->
-            <div class="mainpage-section__header ds-section-header">
-                <h2 class="mainpage-section__title ds-section-title">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">
                     <span class="text-brand-purple">Главная страница</span>, которая продаёт за вас
                 </h2>
-                <p class="mainpage-section__subtitle ds-section-desc">
+                <p class="ds-section-desc">
                     Продуманная архитектура блоков и визуальные акценты направляют покупателя от первого клика до
                     оформления заказа.
                 </p>
@@ -395,12 +394,11 @@
             <!-- Bento Grid -->
             <div class="mp-grid">
 
-                <!-- 1. Шапка сайта — full width -->
                 <div class="mp-card mp-card--full mp-card--header-site">
                     <div class="mp-card__text">
-                        <span class="mp-card__tag ds-tag">Шапка сайта</span>
-                        <h3 class="mp-card__title ds-card-title">Больше 20 вариантов</h3>
-                        <p class="mp-card__desc ds-card-desc">Оформления шапки и удобной навигации для любой ниши. Легко
+                        <span class="ds-tag">Шапка сайта</span>
+                        <h3 class="ds-card-title">Больше 20 вариантов</h3>
+                        <p class="ds-card-desc">Оформления шапки и удобной навигации для любой ниши. Легко
                             адаптируется
                             под ваш фирменный стиль.</p>
                     </div>
@@ -573,7 +571,7 @@
 
 
 
-    <!-- БЛОК: Умный каталог и навигация (REIMAGINED PER REF) -->
+    <!-- БЛОК: Умный каталог и навигация  -->
     <section class="catalog-section">
         <div class="bento-v2-container">
             <!-- 1. Основная шапка -->
@@ -612,11 +610,11 @@
                         <img src="assets/sp2.png" alt="Витрина">
                     </div>
                     <div class="mode-compact-card__info">
-                        <div class="mode-card-header ds-card-header">
+                        <div class="ds-card-header">
                             <div class="mode-card-icon-box mode-card-icon-box--orange ds-icon-box">
                                 <i data-lucide="shopping-bag"></i>
                             </div>
-                            <div class="mode-card-title ds-card-title">Розничный режим</div>
+                            <div class="ds-card-title">Розничный режим</div>
                         </div>
                         <p class="ds-card-desc">Фокус на визуале. Крупные фото и акцент на деталях для максимальной
                             вовлеченности покупателя.
@@ -630,11 +628,11 @@
                         <img src="assets/sp3.png" alt="Галерея">
                     </div>
                     <div class="mode-compact-card__info">
-                        <div class="mode-card-header ds-card-header">
+                        <div class="ds-card-header">
                             <div class="mode-card-icon-box mode-card-icon-box--purple ds-icon-box">
                                 <i data-lucide="layout"></i>
                             </div>
-                            <div class="mode-card-title ds-card-title">Комбинированный вид</div>
+                            <div class="ds-card-title">Комбинированный вид</div>
                         </div>
                         <p class="ds-card-desc">Золотая середина. Вся информация и кнопка покупки доступны без перехода
                             в карточку.</p>
@@ -995,25 +993,6 @@
             </div>
 
             <div class="config-grid mt-10">
-
-                <!-- 1. Навигация и Дизайн карточки (Широкий блок)
-                <div class="setting-card col-span-12 setting-card--split">
-                    <div class="setting-card__side-content">
-                        <div class="setting-card__header">
-                            <div class="setting-icon setting-icon--blue">
-                                <i data-lucide="navigation" style="width: 16px;"></i>
-                            </div>
-                            <h4 class="setting-title">Якорная навигация</h4>
-                        </div>
-                        <p class="setting-card__desc">
-                            Карточка-лендинг с интуитивной якорной навигацией помогает клиенту быстро выбрать товар и
-                            легко найти нужную информацию, не прокручивая длинные страницы.
-                        </p>
-                    </div>
-                    <div class="setting-card__side-visual">
-                        <img src="assets/navitem.png" class="setting-card__mockup-img" alt="Якорная навигация">
-                    </div>
-                </div> -->
 
                 <!-- 2. Торговые предложения (SKU) -->
                 <div class="setting-card md-col-span-7 col-span-12">
@@ -1580,7 +1559,8 @@
     <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
     <section class="section mr-section" id="multi-region">
         <div class="ds-section-header" style="margin-bottom: 56px;">
-            <h2 class="ds-section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span></h2>
+            <h2 class="ds-section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span>
+            </h2>
             <p class="ds-section-desc">
                 Масштабироваться проще, чем кажется. Открывайте филиалы в других городах, новые точки самовывоза и
                 управляйте остатками на складах вместе с готовым функционалом МегаМаркет.
@@ -1606,7 +1586,8 @@
                 <div class="mr-map__dot" style="top: 25%; left: 20%; width: 14px; height: 14px; opacity: 0.5;"></div>
                 <div class="mr-map__dot" style="top: 20%; right: 25%; width: 12px; height: 12px; opacity: 0.4;"></div>
                 <div class="mr-map__dot" style="bottom: 25%; left: 25%; width: 14px; height: 14px; opacity: 0.5;"></div>
-                <div class="mr-map__dot" style="bottom: 15%; right: 30%; width: 10px; height: 10px; opacity: 0.6;"></div>
+                <div class="mr-map__dot" style="bottom: 15%; right: 30%; width: 10px; height: 10px; opacity: 0.6;">
+                </div>
             </div>
 
             <!-- 2. Список магазинов (Узкий - 5) -->
@@ -1669,35 +1650,35 @@
 
                     <div class="mr-city__grid">
                         <div class="mr-city__item mr-city__item--active">
-                            <div class="mr-city__dot"></div> 
+                            <div class="mr-city__dot"></div>
                             <span class="mr-city__name">Москва</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Санкт-Петербург</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Владивосток</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Волгоград</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Иркутск</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Казань</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Курск</span>
                         </div>
                         <div class="mr-city__item">
-                            <div class="mr-city__radio"></div> 
+                            <div class="mr-city__radio"></div>
                             <span class="mr-city__name">Липецк</span>
                         </div>
                     </div>
@@ -1757,6 +1738,443 @@
                 </div>
                 <h4 class="mr-feature__title">Синхронизация</h4>
                 <p class="mr-feature__desc">Автообновление остатков из 1С</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Маркетинг (DESIGN SYSTEM SYNC) -->
+    <section class="mkt-section" id="marketing">
+        <div class="cp-container">
+            <div class="mkt-header">
+                <h2 class="mkt-title">Маркетинг для увеличения конверсии на вашем сайте</h2>
+                <p class="mkt-desc">Используйте мощные инструменты маркетинга для автоматизации продаж и стабильного
+                    роста конверсии в вашем интернет-магазине. Настраивайте гибкие акции, анализируйте поведение
+                    покупателей и запускайте эффективные промо-кампании в несколько кликов.</p>
+            </div>
+
+            <div class="config-grid">
+                <!-- 1. Акции и спецпредложения (Широкая - 7) -->
+                <div class="mkt-card mkt-card--promo">
+                    <div>
+                        <div class="mkt-card__icon-box">
+                            <i data-lucide="megaphone" style="width: 24px;"></i>
+                        </div>
+                        <h3 class="mkt-card__title">Акции и спецпредложения</h3>
+                        <p class="mkt-card__desc">
+                            Создавайте акции со скидками, подарками к заказу и промокодами.
+                            Настраивайте правила запуска по расписанию.
+                        </p>
+                    </div>
+                    <a href="#" class="mkt-card__link">
+                        Смотреть примеры
+                        <i data-lucide="arrow-right" style="width: 16px;"></i>
+                    </a>
+                </div>
+
+                <!-- 2. Баннер 15% (Узкий - 5) -->
+                <div class="mkt-card mkt-card--banner">
+                    <div class="mkt-banner__visual">
+                        <img src="assets/promo_marketing.png" alt="Promo" class="mkt-banner__img">
+                        <span class="mkt-banner__tag">Акции</span>
+                    </div>
+                    <div class="mkt-banner__content">
+                        <span class="mkt-banner__date">21.01.2020</span>
+                        <a href="#" class="mkt-banner__info">Сделай заказ на сумму более 5000 рублей и получи скидку
+                            15%</a>
+                    </div>
+                </div>
+
+                <!-- 3. Блог и статьи (Small - 4) -->
+                <div class="mkt-card mkt-card--small mkt-card--centered">
+                    <div class="mkt-card__icon-box">
+                        <i data-lucide="newspaper" style="width: 24px;"></i>
+                    </div>
+                    <h3 class="mkt-card__title">Блог и статьи</h3>
+                    <p class="mkt-card__desc">
+                        SEO-оптимизированный раздел для контент-маркетинга
+                    </p>
+                </div>
+
+                <!-- 4. Планировщик акций (Small - 4) -->
+                <div class="mkt-card mkt-card--small mkt-card--centered">
+                    <div class="mkt-card__icon-box">
+                        <i data-lucide="calendar" style="width: 24px;"></i>
+                    </div>
+                    <h3 class="mkt-card__title">Планировщик акций</h3>
+                    <p class="mkt-card__desc">
+                        Автоматический запуск и завершение по расписанию
+                    </p>
+                </div>
+
+                <!-- 5. Push-уведомления (Small - 4) -->
+                <div class="mkt-card mkt-card--small mkt-card--centered">
+                    <div class="mkt-card__icon-box">
+                        <i data-lucide="bell" style="width: 24px;"></i>
+                    </div>
+                    <h3 class="mkt-card__title">Push-уведомления</h3>
+                    <p class="mkt-card__desc">
+                        Уведомления о новостях и акциях клиентам
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ds-section adaptive-section" id="adaptive-version">
+        <div class="cp-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Адаптивная версия</h2>
+                <p class="ds-section-desc">Более 70% покупателей делают заказы с мобильных устройств. MarketPRO разработан по принципу Mobile First — сначала мобильная версия, затем адаптация для планшетов и десктопов.</p>
+            </div>
+
+            <div class="adapt-hero">
+                <div class="phone-mockup"><img src="assets/phonemoc.png"></div>
+                <div class="phone-mockup"><img src="assets/phonemoc.png"></div>
+                <div class="phone-mockup"><img src="assets/phonemoc.png"></div>
+            </div>
+
+            <div class="config-grid adaptive-grid">
+                <div class="col-span-12 md-col-span-6">
+                    <div class="adaptive-card">
+                        <div class="adaptive-card__top">
+                            <div class="adaptive-card__icon-wrap">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <div class="adaptive-card__heading">
+                                <span class="adaptive-card__stat">70%</span>
+                                <span class="adaptive-card__subtitle">заказов с мобильных</span>
+                            </div>
+                        </div>
+                        <p class="adaptive-card__text">Современные покупатели предпочитают делать заказы со смартфонов.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md-col-span-6 adaptive-device-grid">
+                    <div class="adaptive-device-card adaptive-device-card--highlight">
+                        <div class="adaptive-device-icon adaptive-device-icon--phone">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div>
+                            <div class="adaptive-device-title">Смартфоны</div>
+                            <div class="adaptive-device-desc">iPhone, Android — все размеры экранов</div>
+                        </div>
+                    </div>
+
+                    <div class="adaptive-device-card">
+                        <div class="adaptive-device-icon adaptive-device-icon--tablet">
+                            <i data-lucide="tablet"></i>
+                        </div>
+                        <div>
+                            <div class="adaptive-device-title">Планшеты</div>
+                            <div class="adaptive-device-desc">iPad, Android-планшеты, ландшафт и портрет</div>
+                        </div>
+                    </div>
+
+                    <div class="adaptive-device-card">
+                        <div class="adaptive-device-icon adaptive-device-icon--desktop">
+                            <i data-lucide="monitor"></i>
+                        </div>
+                        <div>
+                            <div class="adaptive-device-title">Десктоп</div>
+                            <div class="adaptive-device-desc">Мониторы от 1024px до 4K</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Управление сайтом (Эрмитаж) -->
+    <section class="hermitage-section" id="hermitage">
+        <div class="bento-v2-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Управляйте сайтом <span class="text-brand-purple">без программистов</span></h2>
+                <p class="ds-section-desc">Интерфейс «Эрмитаж» от 1С-Битрикс — интуитивное управление для любого пользователя</p>
+            </div>
+
+            <div class="hermitage-card">
+                <!-- Верхняя часть: Заголовок и иконка -->
+                <div class="hermitage-card__header">
+                    <div class="hermitage-card__icon-box ds-icon-box">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <div class="hermitage-card__info">
+                        <h4 class="hermitage-card__title ds-card-title">Интерфейс «Эрмитаж»</h4>
+                        <p class="hermitage-card__subtitle ds-card-desc">Редактирование в режиме реального времени</p>
+                    </div>
+                </div>
+
+                <!-- Центральная часть: Визуальный блок управления -->
+                <div class="hermitage-visual">
+                    <div class="hermitage-visual__status">
+                        <div class="hermitage-visual__status-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <span>Режим редактирования включен</span>
+                    </div>
+
+                    <div class="hermitage-visual__grid">
+                        <div class="hermitage-tool">
+                            <div class="hermitage-tool__icon">
+                                <i data-lucide="settings"></i>
+                            </div>
+                            <span class="hermitage-tool__name">Настройки</span>
+                        </div>
+                        <div class="hermitage-tool">
+                            <div class="hermitage-tool__icon">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <span class="hermitage-tool__name">Дизайн</span>
+                        </div>
+                        <div class="hermitage-tool">
+                            <div class="hermitage-tool__icon">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <span class="hermitage-tool__name">Контент</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Нижняя часть: Список фич -->
+                <div class="hermitage-features">
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Визуальный редактор страниц</span>
+                    </div>
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Редактирование текстов прямо на сайте</span>
+                    </div>
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Управление товарами и ценами</span>
+                    </div>
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Управление баннерами и слайдерами</span>
+                    </div>
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Настройка меню и категорий</span>
+                    </div>
+                    <div class="hermitage-feature">
+                        <div class="hermitage-feature__check">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <span class="hermitage-feature__text">Просмотр заказов и аналитики</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Простота запуска и кастомизация -->
+    <section class="launch-section" id="launch">
+        <div class="bento-v2-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Простота запуска и <span class="text-brand-purple">возможность кастомизации</span></h2>
+                <p class="ds-section-desc">Запускайте магазин быстро: документация поможет разобраться в настройках, а если возникнут вопросы — наша поддержка всегда рядом. Открытый код позволяет дорабатывать решение под ваши задачи.</p>
+            </div>
+
+            <div class="launch-grid">
+                <!-- Карта: Документация -->
+                <div class="launch-card launch-card--docs">
+                    <div class="launch-card__header">
+                        <div class="launch-card__icon-box ds-icon-box">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <h4 class="launch-card__title ds-card-title">Документация по решению</h4>
+                    </div>
+                    <p class="launch-card__desc ds-card-desc">Полная документация: от установки до тонкостей настройки каждого модуля. Пошаговые инструкции с примерами.</p>
+
+                    <div class="launch-docs-preview">
+                        <div class="launch-docs-skeleton">
+                            <div class="launch-skeleton-item">
+                                <div class="launch-skeleton-dot"></div>
+                                <div class="launch-skeleton-line"></div>
+                            </div>
+                            <div class="launch-skeleton-item">
+                                <div class="launch-skeleton-dot"></div>
+                                <div class="launch-skeleton-line" style="width: 60%;"></div>
+                            </div>
+                            <div class="launch-skeleton-item">
+                                <div class="launch-skeleton-dot"></div>
+                                <div class="launch-skeleton-line"></div>
+                            </div>
+                        </div>
+                        <button class="launch-btn-primary">Перейти в документацию</button>
+                    </div>
+                </div>
+
+                <!-- Карта: Настройка -->
+                <div class="launch-card launch-card--settings">
+                    <div class="launch-card__header">
+                        <div class="launch-card__icon-box ds-icon-box">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h4 class="launch-card__title ds-card-title">Простая настройка и запуск</h4>
+                    </div>
+                    <p class="launch-card__desc ds-card-desc">Настраивайте по готовым паттернам через визуальный интерфейс. Базовые параметры — дело пары кликов.</p>
+
+                    <div class="launch-settings-preview">
+                        <div class="launch-palette-title">Цветовая гамма</div>
+                        <div class="launch-palette-grid">
+                            <div class="launch-palette-color" style="background: #ef4444;"></div>
+                            <div class="launch-palette-color" style="background: #f97316;"></div>
+                            <div class="launch-palette-color" style="background: #eab308;"></div>
+                            <div class="launch-palette-color" style="background: #22c55e;"></div>
+                            <div class="launch-palette-color" style="background: #3b82f6;"></div>
+                            <div class="launch-palette-color" style="background: #a855f7;"></div>
+                            <div class="launch-palette-color" style="background: #fca5a5;"></div>
+                            <div class="launch-palette-color" style="background: #fdba74;"></div>
+                            <div class="launch-palette-color" style="background: #fde047;"></div>
+                            <div class="launch-palette-color" style="background: #86efac;"></div>
+                            <div class="launch-palette-color" style="background: #93c5fd;"></div>
+                            <div class="launch-palette-color" style="background: #d8b4fe;"></div>
+                        </div>
+                        <div class="launch-settings-footer">
+                            <span class="launch-settings-label">Основной цвет</span>
+                            <div class="launch-toggle-fake"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижняя сетка -->
+            <div class="launch-bottom-grid">
+                <div class="launch-mini-card">
+                    <div class="launch-mini-card__icon-box">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <div class="launch-mini-card__text">
+                        <strong>Открытый код</strong>
+                        <span>решения</span>
+                    </div>
+                </div>
+                <div class="launch-mini-card">
+                    <div class="launch-mini-card__icon-box">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                    <div class="launch-mini-card__text">
+                        <strong>Год технической</strong>
+                        <span>поддержки</span>
+                    </div>
+                </div>
+                <div class="launch-mini-card">
+                    <div class="launch-mini-card__icon-box">
+                        <i data-lucide="refresh-cw"></i>
+                    </div>
+                    <div class="launch-mini-card__text">
+                        <strong>Год бесплатных</strong>
+                        <span>обновлений</span>
+                    </div>
+                </div>
+                <div class="launch-mini-card launch-mini-card--accent">
+                    <div class="launch-mini-card__icon-box">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <div class="launch-mini-card__text">
+                        <strong>Бесплатная</strong>
+                        <span>установка*</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="launch-footer-note">*Условия бесплатной установки уточняйте у менеджера</p>
+        </div>
+    </section>
+
+    <!-- БЛОК: Интеграция с 1С -->
+    <section class="integration-section" id="integration">
+        <div class="bento-v2-container">
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Интеграция с <span class="text-brand-purple">1С:Предприятие</span></h2>
+                <p class="ds-section-desc">Двусторонний обмен данными между интернет-магазином и учётной системой 1С. Товары, цены, остатки, заказы — всё синхронизируется автоматически в реальном времени.</p>
+                <div class="ds-tag" style="margin-top: 1.5rem; color: var(--color-primary); font-weight: 700;">Обмен через встроенный модуль</div>
+            </div>
+
+            <!-- Верхняя карточка обмена -->
+            <div class="int-exchange-card">
+                <div class="int-exchange-side">
+                    <div class="ds-icon-box int-icon-box"><i data-lucide="database"></i></div>
+                    <div class="int-side-info">
+                        <strong>1С:Предприятие</strong>
+                        <span>Ваша учётная система</span>
+                    </div>
+                </div>
+
+                <div class="int-exchange-center">
+                    <div class="int-sync-arrow">
+                        <i data-lucide="repeat"></i>
+                    </div>
+                    <div class="int-sync-label">
+                        <strong>Двусторонний обмен</strong>
+                        <span>Каждые 5 минут</span>
+                    </div>
+                </div>
+
+                <div class="int-exchange-side int-exchange-side--right">
+                    <div class="int-side-info">
+                        <strong>МегаМарт</strong>
+                        <span>Ваш интернет-магазин</span>
+                    </div>
+                    <div class="int-logo-square">M</div>
+                </div>
+            </div>
+
+            <!-- Сетка возможностей -->
+            <div class="int-grid">
+                <div class="int-card">
+                    <div class="ds-icon-box int-card-icon"><i data-lucide="package"></i></div>
+                    <div class="int-card-body">
+                        <h4 class="ds-card-title">Товары и номенклатура</h4>
+                        <p class="ds-card-desc">Автоматическая синхронизация каталога товаров, категорий, свойств и характеристик</p>
+                    </div>
+                </div>
+                <div class="int-card">
+                    <div class="ds-icon-box int-card-icon"><i data-lucide="tag"></i></div>
+                    <div class="int-card-body">
+                        <h4 class="ds-card-title">Цены и прайс-листы</h4>
+                        <p class="ds-card-desc">Загрузка розничных, оптовых и специальных цен. Поддержка множества типов цен</p>
+                    </div>
+                </div>
+                <div class="int-card">
+                    <div class="ds-icon-box int-card-icon"><i data-lucide="file-text"></i></div>
+                    <div class="int-card-body">
+                        <h4 class="ds-card-title">Заказы и документы</h4>
+                        <p class="ds-card-desc">Передача заказов в 1С, создание счетов, накладных и актов автоматически</p>
+                    </div>
+                </div>
+                <div class="int-card">
+                    <div class="ds-icon-box int-card-icon"><i data-lucide="home"></i></div>
+                    <div class="int-card-body">
+                        <h4 class="ds-card-title">Остатки и склады</h4>
+                        <p class="ds-card-desc">Real-time синхронизация складских остатков по всем складам и магазинам</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижняя карточка с типами цен -->
+            <div class="int-prices-card">
+                <h4 class="ds-card-title">Поддержка типов цен</h4>
+                <div class="int-tags-row">
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> Розничная</span>
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> Оптовая</span>
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> Дилерская</span>
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> Акционная</span>
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> Скидка по карте</span>
+                    <span class="int-price-tag"><span class="int-tag-dot"></span> VIP-клиент</span>
+                </div>
             </div>
         </div>
     </section>
