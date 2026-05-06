@@ -1724,7 +1724,7 @@
     .quote-section__bubble {
       background: var(--color-white);
       border-radius: 28px;
-      padding: var(--design-padding);
+      padding: 3rem;
       box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
       position: relative;
     }
@@ -1734,7 +1734,7 @@
       font-style: italic;
       font-weight: 400;
       color: #4b5563;
-      line-height: 1.75;
+      line-height: 1.5;
     }
 
     /* Хвостик пузыря (треугольник снизу-слева) */
@@ -1948,7 +1948,6 @@
       justify-content: center;
       border-top: 1px solid #f1f5f9;
       min-height: 220px;
-      padding: 1.5rem;
     }
 
     .vitrine-card__img {
