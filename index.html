@@ -1274,94 +1274,139 @@
                     </div>
                 </div>
 
-                <!-- Карта 3: Боковое меню -->
-                <div class="cart-card cart-card--handy">
-                    <div class="cart-handy__info">
+                <!-- Карта 3: Боковая корзина (span 7) -->
+                <div class="cart-bento-card cart-bento--manage">
+                    <div class="cart-bento-info">
                         <div class="card-header">
-                            <div class="icon-box">
-                                <i data-lucide="rocket"></i>
-                            </div>
-                            <h4 class="card-title" style="font-size: 18px;">Всегда под рукой</h4>
-                        </div>
-                        <p class="card-desc">Корзина и избранное доступны в один клик с любой страницы.</p>
-
-                        <div class="cart-features-simple">
-                            <div class="cart-feature-simple-item">
+                            <div class="icon-box" style="background: rgba(124, 58, 237, 0.1); color: var(--color-primary);">
                                 <i data-lucide="panel-right"></i>
-                                <div>
-                                    <strong>Умное меню</strong>
-                                    <span>Выдвижная панель всегда рядом.</span>
-                                </div>
                             </div>
-                            <div class="cart-feature-simple-item">
-                                <i data-lucide="layers"></i>
-                                <div>
-                                    <strong>Центр управления</strong>
-                                    <span>Корзина и избранное в одном месте.</span>
-                                </div>
-                            </div>
+                            <h4 class="card-title">Удобная боковая корзина</h4>
                         </div>
+                        <p class="card-desc">Добавляйте товары и управляйте составом заказа в удобном выезжающем боковом окне, не покидая текущую страницу каталога.</p>
                     </div>
-
-                    <div class="cart-handy__visual">
-                        <div class="mini-sidebar">
-                            <div class="mini-sidebar__item">
-                                <i data-lucide="shopping-cart"></i>
-                                <span class="mini-sidebar__badge">4</span>
+                    <div class="cart-bento-visual">
+                        <div class="ui-side-cart-mockup">
+                            <div class="ui-scm-page">
+                                <div class="ui-scm-page-header"></div>
+                                <div class="ui-scm-page-grid">
+                                    <div class="ui-scm-page-card"></div>
+                                    <div class="ui-scm-page-card"></div>
+                                    <div class="ui-scm-page-card"></div>
+                                </div>
                             </div>
-                            <div class="mini-sidebar__item">
-                                <i data-lucide="heart"></i>
-                                <span class="mini-sidebar__badge">2</span>
-                            </div>
-                            <div class="mini-sidebar__item">
-                                <i data-lucide="layers"></i>
-                                <span class="mini-sidebar__badge">2</span>
-                            </div>
-                            <div class="mini-sidebar__item">
-                                <i data-lucide="message-square"></i>
+                            <div class="ui-scm-overlay"></div>
+                            <div class="ui-scm-panel">
+                                <div class="ui-scm-header">
+                                    <span>Корзина</span>
+                                    <i data-lucide="x"></i>
+                                </div>
+                                <div class="ui-scm-body">
+                                    <div class="ui-scm-item"></div>
+                                    <div class="ui-scm-item" style="opacity: 0.6;"></div>
+                                </div>
+                                <div class="ui-scm-footer">
+                                    <div class="ui-scm-btn">Оформить</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Карта 4: Конверсия -->
-                <div class="cart-card cart-card--conversion">
-                    <div class="card-header">
-                        <div class="icon-box" style="background: #ecfdf5; color: #10b981;">
-                            <i data-lucide="trending-up"></i>
+                <!-- Карта 4: Промокоды (span 5) -->
+                <div class="cart-bento-card cart-bento--promo">
+                    <div class="cart-bento-info">
+                        <div class="card-header">
+                            <div class="icon-box" style="background: rgba(124, 58, 237, 0.1); color: var(--color-primary);">
+                                <i data-lucide="ticket"></i>
+                            </div>
+                            <h4 class="card-title">Система промокодов</h4>
                         </div>
-                        <h4 class="card-title">Рост конверсии</h4>
+                        <p class="card-desc">Встроенный функционал применения купонов с моментальным перерасчетом итоговой стоимости заказа.</p>
                     </div>
-                    <p class="card-desc">Инструменты для быстрого завершения покупки.</p>
+                    <div class="cart-bento-visual">
+                        <div class="ui-promo-widget">
+                            <div class="ui-promo-input-group">
+                                <div class="ui-promo-icon"><i data-lucide="percent"></i></div>
+                                <div class="ui-promo-text">SUMMER24</div>
+                                <div class="ui-promo-apply">Применить</div>
+                            </div>
+                            <div class="ui-promo-success">
+                                <i data-lucide="check-circle"></i> Промокод применен (-20%)
+                            </div>
+                            <div class="ui-promo-total">
+                                <span>Итого:</span>
+                                <span class="ui-promo-price">119 990 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="cart-feature-list">
-                        <div class="cart-feature-item">
-                            <div class="cart-feature-icon-wrap"><i data-lucide="ticket"></i></div>
-                            <div class="cart-feature-info">
-                                <div class="cart-feature-title">Промокоды</div>
-                                <div class="cart-feature-text">Мгновенный расчет скидки.</div>
+                <!-- Карта 5: Способы оплаты (span 5) -->
+                <div class="cart-bento-card cart-bento--pay">
+                    <div class="cart-bento-info">
+                        <div class="card-header">
+                            <div class="icon-box"
+                                style="background: rgba(124, 58, 237, 0.1); color: var(--color-primary);">
+                                <i data-lucide="credit-card"></i>
+                            </div>
+                            <h4 class="card-title">Различные способы оплаты</h4>
+                        </div>
+                        <p class="card-desc">Подключение любых способов: карты, СБП, выставление счетов для юридических
+                            лиц.</p>
+                    </div>
+                    <div class="cart-bento-visual cart-bento-visual--pay">
+                        <div class="ui-pay-stack">
+                            <div class="ui-pay-card ui-pay-card--sbp">
+                                <div class="ui-pay-icon"><i data-lucide="smartphone"></i></div>
+                                <span>СБП (без комиссии)</span>
+                            </div>
+                            <div class="ui-pay-card ui-pay-card--card">
+                                <div class="ui-pay-icon"><i data-lucide="credit-card"></i></div>
+                                <span>Картой онлайн</span>
+                            </div>
+                            <div class="ui-pay-card ui-pay-card--invoice">
+                                <div class="ui-pay-icon"><i data-lucide="file-text"></i></div>
+                                <span>Счет</span>
+                            </div>
+                            <div class="ui-pay-card ui-pay-card--split">
+                                <div class="ui-pay-icon"><i data-lucide="pie-chart"></i></div>
+                                <span>Оплата долями</span>
                             </div>
                         </div>
-                        <div class="cart-feature-item">
-                            <div class="cart-feature-icon-wrap"><i data-lucide="zap"></i></div>
-                            <div class="cart-feature-info">
-                                <div class="cart-feature-title">1 клик</div>
-                                <div class="cart-feature-text">Покупка по телефону.</div>
+                    </div>
+                </div>
+
+                <!-- Карта 6: Автозаполнение (span 7) -->
+                <div class="cart-bento-card cart-bento--autofill">
+                    <div class="cart-bento-info">
+                        <div class="card-header">
+                            <div class="icon-box"
+                                style="background: rgba(124, 58, 237, 0.1); color: var(--color-primary);">
+                                <i data-lucide="user-check"></i>
                             </div>
+                            <h4 class="card-title">Автозаполнение данных</h4>
                         </div>
-                        <div class="cart-feature-item">
-                            <div class="cart-feature-icon-wrap"><i data-lucide="truck"></i></div>
-                            <div class="cart-feature-info">
-                                <div class="cart-feature-title">Доставка</div>
-                                <div class="cart-feature-text">Выбор ПВЗ в корзине.</div>
+                        <p class="card-desc">Сайт запоминает постоянных клиентов. Поля доставки заполняются
+                            автоматически.</p>
+                    </div>
+                    <div class="cart-bento-visual cart-bento-visual--autofill">
+                        <div class="ui-form-mockup">
+                            <div class="ui-form-field">
+                                <div class="ui-form-label">Город доставки</div>
+                                <div class="ui-form-input ui-form-input--filled">
+                                    <span>г. Москва, ул. Ленина, д. 1</span>
+                                    <i data-lucide="check-circle" class="text-brand-purple"></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-feature-item">
-                            <div class="cart-feature-icon-wrap"><i data-lucide="wallet"></i></div>
-                            <div class="cart-feature-info">
-                                <div class="cart-feature-title">Оплата</div>
-                                <div class="cart-feature-text">СБП, карты и счета.</div>
+                            <div class="ui-form-field">
+                                <div class="ui-form-label">Контактный телефон</div>
+                                <div class="ui-form-input ui-form-input--filled">
+                                    <span>+7 (999) 000-00-00</span>
+                                    <i data-lucide="check-circle" class="text-brand-purple"></i>
+                                </div>
                             </div>
+                            <div class="ui-form-btn-mockup">Оформить заказ</div>
                         </div>
                     </div>
                 </div>
@@ -1515,36 +1560,6 @@
                             <p
                                 style="font-size: 13px; color: var(--color-text-muted); line-height: 1.5; font-weight: 500; margin: 0;">
                                 Поддержка национальных почт стран СНГ и международных служб</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Баннер: Автоматический калькулятор -->
-                <div class="calculator-banner">
-                    <div class="calculator-header">
-                        <div class="calculator-icon-container">
-                            <i data-lucide="calculator" class="calculator-icon"></i>
-                        </div>
-                        <div>
-                            <h4 class="calculator-title">
-                                Автоматический калькулятор</h4>
-                            <div class="calculator-description">Стоимость
-                                рассчитывается мгновенно</div>
-                        </div>
-                    </div>
-
-                    <div class="calculator-stats">
-                        <div class="calculator-stat-item">
-                            <span class="calculator-stat-label">Габариты</span>
-                            <span class="calculator-stat-value">30×20×15 см</span>
-                        </div>
-                        <div class="calculator-stat-item">
-                            <span class="calculator-stat-label">Город</span>
-                            <span class="calculator-stat-value">Москва</span>
-                        </div>
-                        <div class="calculator-stat-item">
-                            <span class="calculator-stat-label">Стоимость</span>
-                            <span class="calculator-stat-value calculator-stat-value--accent">от 290 ₽</span>
                         </div>
                     </div>
                 </div>
@@ -1738,7 +1753,7 @@
         </div>
     </section>
 
-        <!-- БЛОК: Маркетинг -->
+    <!-- БЛОК: Маркетинг -->
     <section class="marketing-section section" id="marketing">
         <div class="container">
             <div class="section-header">
