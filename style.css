@@ -5838,14 +5838,18 @@
         grid-column: span 7;
         flex-direction: row;
         align-items: stretch;
-        gap: 2rem;
+        gap: 1rem;
       }
 
       .mc-1 .marketing-card-visual {
-        width: 45%;
+        width: 53%;
         margin-bottom: 0;
         order: 2;
         flex-grow: 0;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .mc-1 .marketing-card-body {
@@ -5877,7 +5881,8 @@
         flex-grow: 0;
         overflow: visible;
         min-height: 260px;
-        background: transparent; /* Remove background to make cards pop more */
+        background: transparent;
+        /* Remove background to make cards pop more */
       }
 
       .mc-4 .marketing-card-body {
@@ -5967,54 +5972,101 @@
       background: rgba(255, 255, 255, 0.1);
     }
 
-    /* 1. 1 Click */
+    /* 1. 1 Click Upgrade - Refined Alignment */
     .mc-v-1click {
       display: flex;
-      background: white;
-      padding: 8px;
-      border-radius: 50px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px;
+      background: white !important;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+      border: 1px solid rgba(0, 0, 0, 0.04) !important;
+      width: fit-content;
+      min-width: 240px;
+      align-items: stretch;
       position: relative;
+      margin: 0 auto;
+      transform: scale(0.95);
+      transform-origin: center center;
+    }
+
+    .oc-top-row {
+      display: flex;
       align-items: center;
-      width: 80%;
-      max-width: 250px;
+      justify-content: space-between;
+      gap: 12px;
     }
 
-    .mc-v-1click-input {
-      flex: 1;
-      font-size: 13px;
-      color: #94a3b8;
-      padding-left: 16px;
-    }
-
-    .mc-v-btn {
-      background: var(--color-primary);
+    .oc-btn-cart {
+      background: #7c3aed;
       color: white;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
       font-size: 13px;
+      font-weight: 700;
+      border: none;
+      flex: 1;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
     }
 
-    .mc-v-cursor {
-      position: absolute;
-      right: -10px;
-      bottom: -15px;
-      color: var(--color-text);
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-      animation: cursorMove 4s ease-in-out infinite;
+    .oc-quantity {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #94a3b8;
+      flex-shrink: 0;
     }
 
-    @keyframes cursorMove {
+    .oc-quantity-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 7px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      font-size: 13px;
+      color: #1e293b;
+    }
 
-      0%,
-      100% {
-        transform: translate(0, 0);
-      }
+    .oc-quantity-val {
+      font-weight: 700;
+    }
 
-      50% {
-        transform: translate(-8px, -8px);
-      }
+    .oc-quantity-unit {
+      color: #64748b;
+      font-size: 11px;
+    }
+
+    .oc-bottom-row {
+      width: 100%;
+    }
+
+    .oc-btn-outline {
+      width: 100%;
+      background: white;
+      color: #334155;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1.5px solid #e2e8f0;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s ease;
+      cursor: default;
+    }
+
+    .oc-minus,
+    .oc-plus {
+      font-size: 16px;
+      color: #cbd5e1;
+      font-weight: 400;
     }
 
     /* 2. Timer */
