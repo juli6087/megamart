@@ -17,6 +17,7 @@
       --color-white: #ffffff;
       --color-light: #f8f9fa;
       --color-border: #e5e7eb;
+      --color-gray: #686868;
 
       --v2-c-yellow: #ffcc33;
       --v2-c-blue: #5b7cfa;
@@ -110,7 +111,7 @@
       DESIGN SYSTEM UTILITIES
     ========================================================================== */
 
-    .ds-card-title {
+    .card-title {
       font-size: var(--design-title-size);
       font-weight: var(--design-title-weight);
       color: var(--color-text);
@@ -119,11 +120,11 @@
       margin: 0;
     }
 
-    .ds-card-title:not(:last-child) {
+    .card-title:not(:last-child) {
       margin-bottom: 0.75rem;
     }
 
-    .ds-card-desc {
+    .card-desc {
       font-size: var(--design-desc-size);
       color: var(--design-desc-color);
       font-weight: var(--design-desc-weight);
@@ -131,11 +132,11 @@
       margin: 0;
     }
 
-    .ds-card-desc:not(:last-child) {
+    .card-desc:not(:last-child) {
       margin-bottom: 1.25rem;
     }
 
-    .ds-icon-box {
+    .icon-box {
       width: var(--design-icon-box-size);
       height: var(--design-icon-box-size);
       border-radius: 12px;
@@ -145,33 +146,33 @@
       flex-shrink: 0;
     }
 
-    .ds-icon-box i {
+    .icon-box i {
       width: var(--design-icon-size);
       height: var(--design-icon-size);
     }
 
-    .ds-card-header {
+    .card-header {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       margin-bottom: var(--design-gap-title-text);
     }
 
-    .ds-card-header--between {
+    .card-header--between {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
     }
 
-    .ds-card-header--column {
+    .card-header--column {
       display: flex;
       flex-direction: column;
       gap: var(--design-gap-title-text);
     }
 
     /* SECTION TYPOGRAPHY (standardized) */
-    .ds-section-header {
+    .section-header {
       margin-bottom: 3.5rem;
       text-align: center;
       display: flex;
@@ -180,7 +181,11 @@
       width: 100%;
     }
 
-    .ds-section-title {
+    #adaptive-version .section-header {
+      margin-bottom: 6rem;
+    }
+
+    .section-title {
       font-size: 36px;
       font-weight: 700;
       color: #1e293b;
@@ -191,7 +196,11 @@
       max-width: 900px;
     }
 
-    .ds-section-desc {
+    #adaptive-version .section-title {
+      color: var(--color-primary);
+    }
+
+    .section-desc {
       font-size: 18px;
       color: #64748b;
       font-weight: 500;
@@ -200,7 +209,7 @@
       margin: 0 auto;
     }
 
-    .ds-tag {
+    .tag {
       font-size: 10.5px;
       font-weight: 700;
       text-transform: uppercase;
@@ -576,7 +585,7 @@
       box-shadow: var(--shadow-custom);
     }
 
-    .delivery-methods-grid {
+    .delivery-methogrid {
       flex: 1.2 1 350px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -678,14 +687,14 @@
     }
 
     .calculator-banner {
-      background: #fff7ed;
+      background: #f5f3ff;
       border-radius: var(--design-card-radius);
       padding: var(--design-padding);
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 24px;
-      border: 1px solid var(--color-accent-light);
+      border: 1px solid rgba(124, 58, 237, 0.1);
       box-shadow: var(--shadow-custom);
     }
 
@@ -742,6 +751,35 @@
 
     .calculator-stat-value--accent {
       color: var(--color-accent);
+    }
+
+    .calculator-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .calculator-icon-container {
+        width: 56px;
+        height: 56px;
+        background: var(--color-primary);
+        color: white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+    }
+
+    .calculator-title {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--color-text);
+        margin-bottom: 4px;
+    }
+    .calculator-description {
+        font-size: 14px;
+        color: var(--color-text-muted);
+        font-weight: 500;
     }
 
     @media (max-width: 768px) {
@@ -963,6 +1001,8 @@
       justify-content: center;
       align-items: flex-end;
       gap: 1.5rem;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
       margin-bottom: 4rem;
       position: relative;
     }
@@ -972,7 +1012,7 @@
       aspect-ratio: 9 / 19;
       background: #111827;
       border-radius: 40px;
-      border: 8px solid #111827;
+      border: 5px solid #111827;
       box-shadow:
         0 50px 100px -20px rgba(0, 0, 0, 0.15),
         0 30px 60px -30px rgba(0, 0, 0, 0.2);
@@ -1027,11 +1067,10 @@
       width: 100%;
     }
 
-
     /* ==========================================================================
     BENTO GRID
     ========================================================================== */
-    .bento-v2-container {
+    .container {
       max-width: 800px;
       margin: 0 auto;
     }
@@ -2698,25 +2737,25 @@
     }
 
     .pricing-card-header {
-      /* Handled by .ds-card-header */
+      /* Handled by .card-header */
     }
 
     .pricing-card-icon {
-      /* Handled by .ds-icon-box */
+      /* Handled by .icon-box */
       background: #fff2eb;
       color: #f97316;
     }
 
     .pricing-card-icon i {
-      /* Handled by .ds-icon-box i */
+      /* Handled by .icon-box i */
     }
 
     .pricing-card-labels h4 {
-      /* Handled by .ds-card-title */
+      /* Handled by .card-title */
     }
 
     .pricing-card-labels p {
-      /* Handled by .ds-card-desc */
+      /* Handled by .card-desc */
     }
 
     .pricing-card-body {
@@ -3540,7 +3579,7 @@
       margin-bottom: 2rem;
     }
 
-    .cp-card-title-row .ds-icon-box {
+    .cp-card-title-row .icon-box {
       background: var(--color-accent-light, #fff5f0);
       color: var(--color-accent, #f97316);
     }
@@ -3700,11 +3739,8 @@
     }
 
     /* ==========================================================================
-            CART SECTION
-            ========================================================================== */
-    /* ==========================================================================
-            CART SECTION
-            ========================================================================== */
+        CART SECTION
+    ========================================================================== */
     .cart-section {
       padding: 80px 0;
       position: relative;
@@ -3746,7 +3782,6 @@
     .cart-card--retail:hover,
     .cart-card--wholesale:hover {
       transform: none;
-      /* Let vitrine-card handle hover */
       box-shadow: none;
     }
 
@@ -3774,12 +3809,12 @@
       justify-content: center;
     }
 
-    .cart-card--handy .ds-card-title,
-    .cart-card--handy .ds-card-desc {
+    .cart-card--handy .card-title,
+    .cart-card--handy .card-desc {
       color: white;
     }
 
-    .cart-card--handy .ds-icon-box {
+    .cart-card--handy .icon-box {
       background: rgba(255, 255, 255, 0.2);
       color: white;
     }
@@ -4063,10 +4098,6 @@
       border: 1px solid var(--color-border);
       border-radius: var(--design-card-radius);
       box-shadow: var(--shadow-custom);
-      /* Стилизованная карта на фон (еще деликатнее) */
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450' opacity='0.04'%3E%3Cpath fill='%237C3AED' d='M150,150 L200,100 L300,120 L400,80 L500,150 L650,100 L750,180 L700,280 L600,350 L450,320 L300,380 L150,300 Z' /%3E%3C/svg%3E");
-      background-size: cover;
-      background-position: center;
     }
 
     .mr-map__grid-layer {
@@ -4092,11 +4123,11 @@
       background:
         linear-gradient(45deg,
           transparent 49.8%,
-          var(--color-border) 50%,
+          var(--color-gray) 50%,
           transparent 50.2%),
         linear-gradient(-45deg,
           transparent 49.8%,
-          var(--color-border) 50%,
+          var(--color-gray) 50%,
           transparent 50.2%);
     }
 
@@ -4268,6 +4299,7 @@
       object-fit: cover;
       display: block;
       flex: 1;
+      padding: 10px;
     }
 
     .mr-city-col {
@@ -4428,6 +4460,22 @@
       color: var(--color-primary);
     }
 
+    .mr-feature__title {
+      font-size: 1rem;
+      font-weight: var(--design-title-weight);
+      color: var(--color-text);
+      margin: 0 0 0.5rem;
+      line-height: 1.2;
+    }
+
+    .mr-feature__desc {
+      font-size: var(--design-desc-size);
+      color: var(--design-desc-color);
+      font-weight: var(--design-desc-weight);
+      line-height: 1.4;
+      margin: 0;
+    }
+
     .mkt-section {
       padding: 100px 0;
       position: relative;
@@ -4467,6 +4515,12 @@
       font-size: 18px;
       color: var(--color-text-muted);
       line-height: 1.6;
+    }
+
+    .section-copy {
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 760px;
     }
 
     .mkt-card {
@@ -4604,10 +4658,6 @@
       line-height: 1.5;
       color: #3b82f6;
       text-decoration: none;
-    }
-
-    .adaptive-section {
-      padding: 100px 0;
     }
 
     .adaptive-grid {
@@ -4771,7 +4821,7 @@
       margin-bottom: 2.5rem;
     }
 
-    .hermitage-card__icon-box.ds-icon-box {
+    .hermitage-card__icon-box.icon-box {
       background: var(--color-accent-light);
       color: var(--color-accent);
       width: 56px;
@@ -4779,7 +4829,7 @@
       border-radius: 18px;
     }
 
-    .hermitage-card__icon-box.ds-icon-box i {
+    .hermitage-card__icon-box.icon-box i {
       width: 28px;
       height: 28px;
     }
@@ -4973,7 +5023,7 @@
       margin-bottom: 2rem;
     }
 
-    .launch-card__icon-box.ds-icon-box {
+    .launch-card__icon-box.icon-box {
       background: var(--color-primary-light);
       color: var(--color-primary);
       width: 48px;
@@ -5221,7 +5271,7 @@
       gap: 1.5rem;
     }
 
-    .int-icon-box.ds-icon-box {
+    .int-icon-box.icon-box {
       background: #fff0e6;
       /* Specific 1C color tint */
       color: var(--color-accent);
@@ -5230,7 +5280,7 @@
       border-radius: 18px;
     }
 
-    .int-icon-box.ds-icon-box i {
+    .int-icon-box.icon-box i {
       width: 32px;
       height: 32px;
     }
@@ -5325,7 +5375,7 @@
       box-shadow: var(--shadow-md);
     }
 
-    .int-card-icon.ds-icon-box {
+    .int-card-icon.icon-box {
       background: #f1f5f9;
       color: var(--color-primary);
       width: 48px;
