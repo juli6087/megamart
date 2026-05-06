@@ -754,36 +754,6 @@
       color: var(--color-accent);
     }
 
-    .calculator-icon {
-      width: 28px;
-      height: 28px;
-    }
-
-    .calculator-icon-container {
-      width: 56px;
-      height: 56px;
-      background: var(--color-primary);
-      color: white;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
-    }
-
-    .calculator-title {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--color-text);
-      margin-bottom: 4px;
-    }
-
-    .calculator-description {
-      font-size: 14px;
-      color: var(--color-text-muted);
-      font-weight: 500;
-    }
-
     @media (max-width: 768px) {
 
       .delivery-settings-grid,

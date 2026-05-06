@@ -1370,8 +1370,9 @@
             <!-- БЛОК: Доставка (Продолжение секции корзины) -->
             <div class="delivery-container" style="margin-top: 40px; margin-bottom: 60px;">
                 <!-- Текстовая отбивка в стиле дизайн-системы -->
-                <div class="section-header" style="margin-bottom: 32px; padding-top: 40px;">
-                    <p class="section-desc">
+                <div class="ds-section-header"
+                    style="margin-bottom: 32px; padding-top: 40px; border-top: 1px solid var(--color-border);">
+                    <p class="ds-section-desc">
                         От самовывоза до международной доставки. Ваши покупатели выбирают удобный способ — система
                         автоматически рассчитывает стоимость.
                     </p>
@@ -1552,276 +1553,7 @@
         </div>
     </section>
 
-    <!-- БЛОК: Маркетинг -->
-    <section class="marketing-section section" id="marketing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="text-brand-purple">Маркетинг</span>, который работает на вас
-                </h2>
-                <p class="section-desc">
-                    Мы встроили в шаблон все инструменты, за которые обычно платят маркетологам. Просто включите нужные
-                    функции и наблюдайте, как растет ваша прибыль.
-                </p>
-            </div>
-
-            <div class="marketing-bento">
-                <!-- 1. Покупка в 1 клик -->
-                <div class="marketing-card mc-1">
-                    <div class="card-badge" style="background: #ef4444; color: white;">ХИТ</div>
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-1click">
-                            <div class="mc-v-1click-input">Ваш телефон</div>
-                            <button class="mc-v-btn">Купить</button>
-                            <div class="mc-v-cursor">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M4 4l16 5.333-7.538 3.015L9.447 19.884 4 4z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Покупка в 1 клик</h3>
-                        <p class="card-desc">Мгновенный заказ без длинных форм. Одно поле, одна кнопка — и заказ уже в
-                            работе.</p>
-                    </div>
-                </div>
-
-                <!-- 2. Таймер акций -->
-                <div class="marketing-card mc-2">
-                    <div class="card-badge" style="background: #f59e0b; color: white;">АКЦИЯ</div>
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-timer">
-                            <div class="mc-v-timer-box">02<span>Дня</span></div>
-                            <div class="mc-v-timer-box">14<span>Часов</span></div>
-                            <div class="mc-v-timer-box">45<span>Мин</span></div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Таймер акций</h3>
-                        <p class="card-desc">Акцент на выгоде. Четкий обратный отсчет мотивирует к быстрой покупке.</p>
-                    </div>
-                </div>
-
-                <!-- 3. Выгодные наборы -->
-                <div class="marketing-card mc-3">
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-bundle">
-                            <div class="mc-v-bundle-item"><i data-lucide="smartphone" style="width: 20px;"></i></div>
-                            <i data-lucide="plus" style="color: #94a3b8; width: 16px;"></i>
-                            <div class="mc-v-bundle-item"><i data-lucide="headphones" style="width: 20px;"></i></div>
-                            <i data-lucide="equal" style="color: #94a3b8; width: 16px;"></i>
-                            <div class="mc-v-bundle-item" style="background: var(--color-primary); color: white;"><i
-                                    data-lucide="percent" style="width: 20px;"></i></div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Выгодные наборы</h3>
-                        <p class="card-desc">Комплекты со скидкой. Увеличивайте средний чек, предлагая готовые решения в
-                            один клик.</p>
-                    </div>
-                </div>
-
-                <!-- 4. С этим товаром покупают -->
-                <div class="marketing-card mc-5 marketing-card--blue">
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-fbt">
-                            <div class="fbt-promo-row">
-                                <!-- Product 1: iPad -->
-                                <div class="fbt-product-card">
-                                    <img src="assets/ipad_32gb_silver_mockup_1778052771910.png" alt="iPad"
-                                        class="fbt-product-image">
-                                    <div class="fbt-product-title">Apple iPad 10.2 (2021) 64GB Wi-Fi Silver</div>
-                                    <div class="fbt-product-rating">
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <span
-                                            style="font-size: 8px; color: #94a3b8; font-weight: 700; margin-left: 2px;">4.9</span>
-                                    </div>
-                                    <div class="fbt-product-price">
-                                        <span class="old">34 990 ₽</span>
-                                        <span class="current">31 490 ₽</span>
-                                    </div>
-                                </div>
-                                <!-- Product 2: Apple TV -->
-                                <div class="fbt-product-card">
-                                    <div class="fbt-product-badge">Подарок</div>
-                                    <img src="assets/apple_tv_4k_remote_mockup_1778052789594.png" alt="Apple TV"
-                                        class="fbt-product-image">
-                                    <div class="fbt-product-title">Apple TV 4K (2022) 128GB Wi-Fi + Ethernet</div>
-                                    <div class="fbt-product-rating">
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <i data-lucide="star"
-                                            style="width: 10px; fill: currentColor; stroke-width: 0;"></i>
-                                        <span
-                                            style="font-size: 8px; color: #94a3b8; font-weight: 700; margin-left: 2px;">5.0</span>
-                                    </div>
-                                    <div class="fbt-product-price">
-                                        <span class="old">19 990 ₽</span>
-                                        <span class="current">0 ₽</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">С этим товаром покупают</h3>
-                        <p class="card-desc">Умные рекомендации аксессуаров в корзине и карточке товара. Полезно для
-                            клиента, прибыльно для вас.</p>
-                    </div>
-                </div>
-
-                <!-- 5. Подарки к заказу -->
-                <div class="marketing-card mc-5 marketing-card--purple">
-                    <div class="card-badge"
-                        style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">
-                        БОНУС</div>
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-gift-cart">
-                            <div class="gc-row">
-                                <div class="gc-icon"><i data-lucide="shopping-cart"></i></div>
-                                <div class="gc-text">
-                                    <div class="gc-title">Сумма заказа</div>
-                                    <div class="gc-price">5 000 ₽</div>
-                                </div>
-                            </div>
-                            <div class="gc-divider"></div>
-                            <div class="gc-row gc-gift-row">
-                                <div class="gc-icon gc-icon-gift"><i data-lucide="gift"></i></div>
-                                <div class="gc-text">
-                                    <div class="gc-title" style="color:var(--color-primary);">+ Наушники</div>
-                                    <div class="gc-price"
-                                        style="text-decoration:line-through; color:#94a3b8; font-size:11px;">1 500 ₽
-                                    </div>
-                                    <div class="gc-price" style="color:#10b981;">0 ₽</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Подарки к заказу</h3>
-                        <p class="card-desc">Бонус за объем. Автоматическое добавление подарка в корзину при достижении
-                            нужной суммы.</p>
-                    </div>
-                </div>
-
-                <!-- 6. Промокоды и купоны -->
-                <div class="marketing-card mc-6">
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-promo">SALE2026</div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Промокоды и купоны</h3>
-                        <p class="card-desc">Генерируйте уникальные коды для акций. Управляйте лояльностью и
-                            отслеживайте эффективность рекламы.</p>
-                    </div>
-                </div>
-
-                <!-- 7. Подписка на товары -->
-                <div class="marketing-card mc-7">
-                    <div class="card-badge" style="background: #3b82f6; color: white;">SMART</div>
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-sub-phone">
-                            <div class="phone-screen">
-                                <div class="phone-status">
-                                    <span class="status-time">12:45</span>
-                                    <div class="status-icons">
-                                        <i data-lucide="wifi" style="width: 10px;"></i>
-                                        <i data-lucide="battery" style="width: 10px;"></i>
-                                    </div>
-                                </div>
-                                <div class="phone-notif">
-                                    <div class="notif-header">
-                                        <div class="notif-app-icon"><i data-lucide="shopping-bag"
-                                                style="width: 10px;"></i></div>
-                                        <span>MegaMart</span>
-                                        <span class="notif-time">сейчас</span>
-                                    </div>
-                                    <div class="notif-title">Товар снова в наличии!</div>
-                                    <div class="notif-text">Смартфон Pro Max доступен к заказу.</div>
-                                </div>
-                                <div class="phone-content">
-                                    <div class="phone-product-img"></div>
-                                    <div class="phone-product-info">
-                                        <div class="phone-line" style="width: 60%;"></div>
-                                        <div class="phone-line" style="width: 40%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Подписка на товары</h3>
-                        <p class="card-desc">Лист ожидания. Автоматические email-уведомления при поступлении нужного
-                            товара на склад.</p>
-                    </div>
-                </div>
-
-                <!-- 8. Новости и «Аукционы» -->
-                <div class="marketing-card mc-8">
-                    <div class="marketing-card-visual">
-                        <div class="mc-v-news-mockup">
-                            <div class="mc-v-news-header">
-                                <div class="mc-v-news-dot" style="background:#f43f5e;"></div>
-                                <div class="mc-v-news-dot" style="background:#facc15;"></div>
-                                <div class="mc-v-news-dot" style="background:#10b981;"></div>
-                            </div>
-                            <div class="mc-v-news-body">
-                                <div class="mc-v-news-badge">SALE</div>
-                                <div class="mc-v-news-title">Закрытая распродажа!</div>
-                                <div class="mc-v-news-text">Только для подписчиков - скидки до 50%</div>
-                                <button class="mc-v-news-btn">Узнать подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">Новости и «Аукционы»</h3>
-                        <p class="card-desc">Встроенные рассылки о новинках и распродажах. Возвращайте клиентов за
-                            покупками без лишних затрат.</p>
-                    </div>
-                </div>
-
-                <!-- 9. SEO-шаблоны в каталоге -->
-                <div class="marketing-card mc-9 marketing-card--light">
-                    <div class="card-badge" style="background: #10b981; color: white;">SEO PRO</div>
-                    <div class="marketing-card-visual" style="justify-content: center; align-items: stretch;">
-                        <div class="mc-v-seo-search">
-                            <div class="seo-search-url">https://megamart.ru <span>› catalog</span></div>
-                            <div class="seo-search-title">Купить {Название} со скидкой — MegaMart</div>
-                            <div class="seo-search-desc">Огромный выбор в категории {Категория}. Доставка по всей
-                                России, гарантия качества и лучшие цены. Заказывайте прямо сейчас!</div>
-                            <div class="seo-search-tags">
-                                <span>#мета_теги</span>
-                                <span>#автоматизация</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marketing-card-body">
-                        <h3 class="card-title">SEO-шаблоны в каталоге</h3>
-                        <p class="card-desc">Готовые шаблоны для массовой генерации мета-тегов. Настройте один раз для
-                            тысяч товаров в каталоге.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM REFACTORED) -->
     <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
     <section class="section mr-section" id="multi-region">
         <div class="section-header" style="margin-bottom: 56px;">
@@ -2012,8 +1744,7 @@
     <section class="mkt-section" id="marketing">
         <div class="cp-container">
             <div class="mkt-header">
-                <h2 class="mkt-title">Маркетинг для <span class="text-brand-purple">увеличения конверсии</span> на вашем
-                    сайте</h2>
+                <h2 class="mkt-title">Маркетинг для увеличения конверсии на вашем сайте</h2>
                 <p class="mkt-desc">Используйте мощные инструменты маркетинга для автоматизации продаж и стабильного
                     роста конверсии в вашем интернет-магазине.</p>
             </div>
@@ -2083,19 +1814,14 @@
                     </p>
                 </div>
             </div>
-
-            <p class="mkt-desc section-copy">Настраивайте гибкие акции, анализируйте поведение покупателей и запускайте
-                эффективные промо-кампании в несколько кликов.</p>
         </div>
     </section>
 
     <section class="section adaptive-section" id="adaptive-version">
         <div class="cp-container">
-            <div class="section-header">
-                <h2 class="section-title">Адаптивная версия</h2>
-                <p class="section-desc">Более 70% покупателей делают заказы с мобильных устройств.<br> MarketPRO
-                    разработан
-                    по принципу Mobile First — сначала мобильная версия, затем адаптация для планшетов и десктопов.</p>
+            <div class="ds-section-header">
+                <h2 class="ds-section-title">Адаптивная версия</h2>
+                <p class="ds-section-desc">Более 70% покупателей делают заказы с мобильных устройств. MarketPRO разработан по принципу Mobile First — сначала мобильная версия, затем адаптация для планшетов и десктопов.</p>
             </div>
 
             <div class="adapt-hero">
