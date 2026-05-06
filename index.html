@@ -1552,7 +1552,193 @@
         </div>
     </section>
 
-    <!-- БЛОК: Маркетинг -->
+    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
+    <section class="section mr-section" id="multi-region">
+        <div class="section-header" style="margin-bottom: 56px;">
+            <h2 class="section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span>
+            </h2>
+            <p class="section-desc">
+                Масштабироваться проще, чем кажется. Открывайте филиалы в других городах, новые точки самовывоза и
+                управляйте остатками на складах вместе с готовым функционалом МегаМаркет.
+            </p>
+        </div>
+
+        <div class="config-grid">
+            <!-- 1. Интерактивная карта (Широкая - 7) -->
+            <div class="setting-card col-span-12 md-col-span-7 mr-map">
+                <div class="mr-map__grid-layer"></div>
+                <div class="mr-map__diagonal-layer"></div>
+
+                <div class="mr-map__badge">
+                    <div class="mr-map__badge-dot"></div>
+                    Одна точка или целая сеть
+                </div>
+
+                <div class="mr-map__pin-wrap">
+                    <i data-lucide="map-pin" class="mr-map__pin-icon"></i>
+                    <div class="mr-map__pin-center"></div>
+                </div>
+
+                <div class="mr-map__dot" style="top: 25%; left: 20%; width: 14px; height: 14px; opacity: 0.5;"></div>
+                <div class="mr-map__dot" style="top: 20%; right: 25%; width: 12px; height: 12px; opacity: 0.4;"></div>
+                <div class="mr-map__dot" style="bottom: 25%; left: 25%; width: 14px; height: 14px; opacity: 0.5;"></div>
+                <div class="mr-map__dot" style="bottom: 15%; right: 30%; width: 10px; height: 10px; opacity: 0.6;">
+                </div>
+            </div>
+
+            <!-- 2. Список магазинов (Узкий - 5) -->
+            <div class="setting-card col-span-12 md-col-span-5 mr-stores">
+                <div class="mr-stores__header">
+                    <div class="mr-stores__breadcrumbs">Главная / Наши магазины</div>
+                    <h4 class="mr-stores__title">НАШИ МАГАЗИНЫ</h4>
+                </div>
+
+                <div class="mr-stores__list">
+                    <div class="mr-stores__item">
+                        <div class="mr-stores__row">
+                            <div class="mr-stores__radio mr-stores__radio--active">
+                                <div class="mr-stores__radio-inner"></div>
+                            </div>
+                            <div class="mr-stores__info">
+                                <div class="mr-stores__name">
+                                    <span class="mr-stores__name-prefix">Торговый центр</span> Триумфальный
+                                </div>
+                                <div class="mr-stores__address">
+                                    Москва, ул. Вавилова, 66<br>тел. +7 (495) 978-30-08<br>
+                                    <span class="mr-stores__hours">10:00-21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-stores__item mr-stores__item--muted">
+                        <div class="mr-stores__row">
+                            <div class="mr-stores__radio"></div>
+                            <div class="mr-stores__info">
+                                <div class="mr-stores__name">
+                                    <span class="mr-stores__name-prefix">Торговый центр</span> Акс
+                                </div>
+                                <div class="mr-stores__address">
+                                    Москва, Измайловское ш., 71а<br>
+                                    <span class="mr-stores__hours--muted">10:00-22:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Скриншот интерфейса (Узкая - 5) -->
+            <div class="setting-card col-span-12 md-col-span-5 mr-screenshot">
+                <img src="assets/iros.png" alt="Interface Screenshot" class="mr-screenshot__img">
+            </div>
+
+            <!-- 4. Выбор города и Чеклист (Широкая - 7) -->
+            <div class="col-span-12 md-col-span-7 mr-city-col">
+                <div class="setting-card mr-city">
+                    <div class="mr-city__header">
+                        <i data-lucide="globe" class="mr-city__icon"></i>
+                        <div class="mr-city__header-content">
+                            <h4 class="mr-city__title">Ваш город?</h4>
+                            <span class="mr-city__subtitle">ВЫБЕРИТЕ ИЗ СПИСКА</span>
+                        </div>
+                    </div>
+
+                    <div class="mr-city__grid">
+                        <div class="mr-city__item mr-city__item--active">
+                            <div class="mr-city__dot"></div>
+                            <span class="mr-city__name">Москва</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Санкт-Петербург</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Владивосток</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Волгоград</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Иркутск</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Казань</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Курск</span>
+                        </div>
+                        <div class="mr-city__item">
+                            <div class="mr-city__radio"></div>
+                            <span class="mr-city__name">Липецк</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting-card mr-checklist">
+                    <div class="mr-checklist__badge">ВЫБОР ГОРОДА ИЗМЕНЯЕТ</div>
+                    <div class="mr-checklist__grid">
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Цены и остатки</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Контакты</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Акции и новости</span>
+                        </div>
+                        <div class="mr-checklist__item">
+                            <i data-lucide="check" class="mr-checklist__icon"></i>
+                            <span class="mr-checklist__text">Формат названия</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Нижние модули (4 шт) -->
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="archive" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Многоскладовость</h4>
+                <p class="mr-feature__desc">Управление остатками на складах</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="store" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Пункты выдачи</h4>
+                <p class="mr-feature__desc">Любое количество точек самовывоза</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="truck" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Расчёт доставки</h4>
+                <p class="mr-feature__desc">Авторасчет по зонам и тарифам</p>
+            </div>
+
+            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
+                <div class="mr-feature__icon-box">
+                    <i data-lucide="refresh-cw" style="width: 24px;"></i>
+                </div>
+                <h4 class="mr-feature__title">Синхронизация</h4>
+                <p class="mr-feature__desc">Автообновление остатков из 1С</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- БЛОК: Маркетинг -->
     <section class="marketing-section section" id="marketing">
         <div class="container">
             <div class="section-header">
@@ -1828,273 +2014,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
-    <section class="section mr-section" id="multi-region">
-        <div class="section-header" style="margin-bottom: 56px;">
-            <h2 class="section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span>
-            </h2>
-            <p class="section-desc">
-                Масштабироваться проще, чем кажется. Открывайте филиалы в других городах, новые точки самовывоза и
-                управляйте остатками на складах вместе с готовым функционалом МегаМаркет.
-            </p>
-        </div>
-
-        <div class="config-grid">
-            <!-- 1. Интерактивная карта (Широкая - 7) -->
-            <div class="setting-card col-span-12 md-col-span-7 mr-map">
-                <div class="mr-map__grid-layer"></div>
-                <div class="mr-map__diagonal-layer"></div>
-
-                <div class="mr-map__badge">
-                    <div class="mr-map__badge-dot"></div>
-                    Одна точка или целая сеть
-                </div>
-
-                <div class="mr-map__pin-wrap">
-                    <i data-lucide="map-pin" class="mr-map__pin-icon"></i>
-                    <div class="mr-map__pin-center"></div>
-                </div>
-
-                <div class="mr-map__dot" style="top: 25%; left: 20%; width: 14px; height: 14px; opacity: 0.5;"></div>
-                <div class="mr-map__dot" style="top: 20%; right: 25%; width: 12px; height: 12px; opacity: 0.4;"></div>
-                <div class="mr-map__dot" style="bottom: 25%; left: 25%; width: 14px; height: 14px; opacity: 0.5;"></div>
-                <div class="mr-map__dot" style="bottom: 15%; right: 30%; width: 10px; height: 10px; opacity: 0.6;">
-                </div>
-            </div>
-
-            <!-- 2. Список магазинов (Узкий - 5) -->
-            <div class="setting-card col-span-12 md-col-span-5 mr-stores">
-                <div class="mr-stores__header">
-                    <div class="mr-stores__breadcrumbs">Главная / Наши магазины</div>
-                    <h4 class="mr-stores__title">НАШИ МАГАЗИНЫ</h4>
-                </div>
-
-                <div class="mr-stores__list">
-                    <div class="mr-stores__item">
-                        <div class="mr-stores__row">
-                            <div class="mr-stores__radio mr-stores__radio--active">
-                                <div class="mr-stores__radio-inner"></div>
-                            </div>
-                            <div class="mr-stores__info">
-                                <div class="mr-stores__name">
-                                    <span class="mr-stores__name-prefix">Торговый центр</span> Триумфальный
-                                </div>
-                                <div class="mr-stores__address">
-                                    Москва, ул. Вавилова, 66<br>тел. +7 (495) 978-30-08<br>
-                                    <span class="mr-stores__hours">10:00-21:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mr-stores__item mr-stores__item--muted">
-                        <div class="mr-stores__row">
-                            <div class="mr-stores__radio"></div>
-                            <div class="mr-stores__info">
-                                <div class="mr-stores__name">
-                                    <span class="mr-stores__name-prefix">Торговый центр</span> Акс
-                                </div>
-                                <div class="mr-stores__address">
-                                    Москва, Измайловское ш., 71а<br>
-                                    <span class="mr-stores__hours--muted">10:00-22:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Скриншот интерфейса (Узкая - 5) -->
-            <div class="setting-card col-span-12 md-col-span-5 mr-screenshot">
-                <img src="assets/iros.png" alt="Interface Screenshot" class="mr-screenshot__img">
-            </div>
-
-            <!-- 4. Выбор города и Чеклист (Широкая - 7) -->
-            <div class="col-span-12 md-col-span-7 mr-city-col">
-                <div class="setting-card mr-city">
-                    <div class="mr-city__header">
-                        <i data-lucide="globe" class="mr-city__icon"></i>
-                        <div class="mr-city__header-content">
-                            <h4 class="mr-city__title">Ваш город?</h4>
-                            <span class="mr-city__subtitle">ВЫБЕРИТЕ ИЗ СПИСКА</span>
-                        </div>
-                    </div>
-
-                    <div class="mr-city__grid">
-                        <div class="mr-city__item mr-city__item--active">
-                            <div class="mr-city__dot"></div>
-                            <span class="mr-city__name">Москва</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Санкт-Петербург</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Владивосток</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Волгоград</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Иркутск</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Казань</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Курск</span>
-                        </div>
-                        <div class="mr-city__item">
-                            <div class="mr-city__radio"></div>
-                            <span class="mr-city__name">Липецк</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="setting-card mr-checklist">
-                    <div class="mr-checklist__badge">ВЫБОР ГОРОДА ИЗМЕНЯЕТ</div>
-                    <div class="mr-checklist__grid">
-                        <div class="mr-checklist__item">
-                            <i data-lucide="check" class="mr-checklist__icon"></i>
-                            <span class="mr-checklist__text">Цены и остатки</span>
-                        </div>
-                        <div class="mr-checklist__item">
-                            <i data-lucide="check" class="mr-checklist__icon"></i>
-                            <span class="mr-checklist__text">Контакты</span>
-                        </div>
-                        <div class="mr-checklist__item">
-                            <i data-lucide="check" class="mr-checklist__icon"></i>
-                            <span class="mr-checklist__text">Акции и новости</span>
-                        </div>
-                        <div class="mr-checklist__item">
-                            <i data-lucide="check" class="mr-checklist__icon"></i>
-                            <span class="mr-checklist__text">Формат названия</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. Нижние модули (4 шт) -->
-            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
-                <div class="mr-feature__icon-box">
-                    <i data-lucide="archive" style="width: 24px;"></i>
-                </div>
-                <h4 class="mr-feature__title">Многоскладовость</h4>
-                <p class="mr-feature__desc">Управление остатками на складах</p>
-            </div>
-
-            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
-                <div class="mr-feature__icon-box">
-                    <i data-lucide="store" style="width: 24px;"></i>
-                </div>
-                <h4 class="mr-feature__title">Пункты выдачи</h4>
-                <p class="mr-feature__desc">Любое количество точек самовывоза</p>
-            </div>
-
-            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
-                <div class="mr-feature__icon-box">
-                    <i data-lucide="truck" style="width: 24px;"></i>
-                </div>
-                <h4 class="mr-feature__title">Расчёт доставки</h4>
-                <p class="mr-feature__desc">Авторасчет по зонам и тарифам</p>
-            </div>
-
-            <div class="setting-card col-span-6 md-col-span-3 mr-feature">
-                <div class="mr-feature__icon-box">
-                    <i data-lucide="refresh-cw" style="width: 24px;"></i>
-                </div>
-                <h4 class="mr-feature__title">Синхронизация</h4>
-                <p class="mr-feature__desc">Автообновление остатков из 1С</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- БЛОК: Маркетинг (DESIGN SYSTEM SYNC) -->
-    <section class="mkt-section" id="marketing">
-        <div class="cp-container">
-            <div class="mkt-header">
-                <h2 class="mkt-title">Маркетинг для <span class="text-brand-purple">увеличения конверсии</span> на вашем
-                    сайте</h2>
-                <p class="mkt-desc">Используйте мощные инструменты маркетинга для автоматизации продаж и стабильного
-                    роста конверсии в вашем интернет-магазине.</p>
-            </div>
-
-            <div class="config-grid">
-                <!-- 1. Акции и спецпредложения (Широкая - 7) -->
-                <div class="mkt-card mkt-card--promo">
-                    <div>
-                        <div class="mkt-card__icon-box">
-                            <i data-lucide="megaphone" style="width: 24px;"></i>
-                        </div>
-                        <h3 class="mkt-card__title">Акции и спецпредложения</h3>
-                        <p class="mkt-card__desc">
-                            Создавайте акции со скидками, подарками к заказу и промокодами.
-                            Настраивайте правила запуска по расписанию.
-                        </p>
-                    </div>
-                    <a href="#" class="mkt-card__link">
-                        Смотреть примеры
-                        <i data-lucide="arrow-right" style="width: 16px;"></i>
-                    </a>
-                </div>
-
-                <!-- 2. Баннер 15% (Узкий - 5) -->
-                <div class="mkt-card mkt-card--banner">
-                    <div class="mkt-banner__visual">
-                        <img src="assets/promo_marketing.png" alt="Promo" class="mkt-banner__img">
-                        <span class="mkt-banner__tag">Акции</span>
-                    </div>
-                    <div class="mkt-banner__content">
-                        <span class="mkt-banner__date">21.01.2020</span>
-                        <a href="#" class="mkt-banner__info">Сделай заказ на сумму более 5000 рублей и получи скидку
-                            15%</a>
-                    </div>
-                </div>
-
-                <!-- 3. Блог и статьи (Small - 4) -->
-                <div class="mkt-card mkt-card--small mkt-card--centered">
-                    <div class="mkt-card__icon-box">
-                        <i data-lucide="newspaper" style="width: 24px;"></i>
-                    </div>
-                    <h3 class="mkt-card__title">Блог и статьи</h3>
-                    <p class="mkt-card__desc">
-                        SEO-оптимизированный раздел для контент-маркетинга
-                    </p>
-                </div>
-
-                <!-- 4. Планировщик акций (Small - 4) -->
-                <div class="mkt-card mkt-card--small mkt-card--centered">
-                    <div class="mkt-card__icon-box">
-                        <i data-lucide="calendar" style="width: 24px;"></i>
-                    </div>
-                    <h3 class="mkt-card__title">Планировщик акций</h3>
-                    <p class="mkt-card__desc">
-                        Автоматический запуск и завершение по расписанию
-                    </p>
-                </div>
-
-                <!-- 5. Push-уведомления (Small - 4) -->
-                <div class="mkt-card mkt-card--small mkt-card--centered">
-                    <div class="mkt-card__icon-box">
-                        <i data-lucide="bell" style="width: 24px;"></i>
-                    </div>
-                    <h3 class="mkt-card__title">Push-уведомления</h3>
-                    <p class="mkt-card__desc">
-                        Уведомления о новостях и акциях клиентам
-                    </p>
-                </div>
-            </div>
-
-            <p class="mkt-desc section-copy">Настраивайте гибкие акции, анализируйте поведение покупателей и запускайте
-                эффективные промо-кампании в несколько кликов.</p>
         </div>
     </section>
 
