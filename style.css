@@ -5667,17 +5667,6 @@
       position: relative;
     }
 
-    .marketing-section::before {
-      content: '';
-      position: absolute;
-      top: 10%;
-      left: -100px;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
     .marketing-section::after {
       content: '';
       position: absolute;
@@ -7959,18 +7948,17 @@
     .control-author {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1rem;
       margin-bottom: 2.5rem;
     }
 
 
     .control-avatar {
-      width: 72px;
+      width: 85px;
       height: 72px;
       border-radius: 50%;
       overflow: hidden;
       background: #f1f5f9;
-      border: 3px solid white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
