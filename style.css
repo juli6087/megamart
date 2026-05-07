@@ -443,7 +443,7 @@
       font-size: 32px;
       font-weight: 700;
       color: #1e293b;
-      line-height: 1.1;
+      line-height: 1.3;
       letter-spacing: -0.02em;
       margin-bottom: 1.5rem;
     }
@@ -454,7 +454,7 @@
       font-weight: 500;
       line-height: 1.6;
       max-width: 700px;
-      margin: 0 auto 2.5rem;
+      margin: 0 auto 1.5rem;
     }
 
     .hero__benefits {
@@ -1198,7 +1198,7 @@
     @media (min-width: 768px) {
       .bento-v2-card--main {
         grid-column: span 2;
-        padding: var(--design-padding);
+        padding: 2rem;
       }
     }
 
@@ -1251,7 +1251,7 @@
 
     @media (min-width: 768px) {
       .bento-v2-main-title {
-        font-size: 3rem;
+        font-size: 2.75rem;
       }
     }
 
@@ -1275,12 +1275,6 @@
       transition: box-shadow 0.15s ease-in-out;
       cursor: pointer;
       flex-shrink: 0;
-    }
-
-    @media (min-width: 768px) {
-      .bento-v2-btn-demo {
-        margin-top: 1rem;
-      }
     }
 
     .bento-v2-btn-demo:hover {
@@ -1654,17 +1648,17 @@
     }
 
     .bento-v2-icon-orange {
-      background-color: #fff7ed;
+      background-color: #ffebd2;
       color: #f97316;
     }
 
     .bento-v2-icon-purple {
-      background-color: #f5f3ff;
+      background-color: #e0d9ff;
       color: #7c3aed;
     }
 
     .bento-v2-icon-blue {
-      background-color: #eff6ff;
+      background-color: #d7e9ff;
       color: #3b82f6;
     }
 
@@ -1910,6 +1904,7 @@
     /* Верхняя часть карточки */
     .vitrine-card__top {
       padding: var(--design-padding);
+      align-items: flex-start;
       margin-bottom: 0;
     }
 
@@ -1960,6 +1955,106 @@
 
     .vitrine-card:hover .vitrine-card__img {
       transform: scale(1.02);
+    }
+
+    /* Экспертная плашка в блоке витрин */
+    .vitrine-expert-note {
+      margin: 3.5rem auto 2.5rem;
+      max-width: 960px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      position: relative;
+    }
+
+    .vitrine-expert-note__icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(124, 58, 237, 0.08);
+      color: var(--color-primary);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .vitrine-expert-note__text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .vitrine-expert-note__text b {
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .vitrine-expert-note {
+        flex-direction: column;
+        padding: 2.5rem 1.5rem 1.5rem;
+        text-align: center;
+        gap: 1.25rem;
+        margin-top: 4rem;
+      }
+
+      .vitrine-expert-note::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Проработанная кнопка Демо */
+    .vitrine-demo-footer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .btn-demo-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 3.5rem;
+      background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+      color: white;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 15px 35px rgba(124, 58, 237, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-demo-premium:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 45px rgba(124, 58, 237, 0.4);
+    }
+
+    .btn-demo-premium__play {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s ease;
+    }
+
+    .btn-demo-premium:hover .btn-demo-premium__play {
+      transform: scale(1.1) rotate(15deg);
+      background: rgba(255, 255, 255, 0.3);
     }
 
     /* ==========================================================================
