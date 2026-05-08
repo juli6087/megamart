@@ -1360,7 +1360,7 @@
     </div>
 
 
-    <!-- Корзина и оформление заказа -->
+    <!-- БЛОК: Корзина и оформление заказа -->
     <section class="cart-section" id="cart">
         <div class="container">
             <div class="section-header">
@@ -1605,13 +1605,17 @@
                         </p>
 
                         <div class="delivery-info-stats">
-                            <div class="delivery-info-stat-item">
-                                <div class="delivery-info-stat-label">Стоимость:</div>
+                            <div>
+                                <div class="delivery-info-stat-label">
+                                    Стоимость:
+                                </div>
                                 <div class="delivery-info-stat-value">75 руб</div>
                             </div>
-                            <div class="delivery-info-stat-item">
-                                <div class="delivery-info-stat-label">Срок доставки:</div>
-                                <div class="delivery-info-stat-value">от 9 до 15 дней</div>
+                            <div>
+                                <div class="delivery-info-stat-label">Срок
+                                    доставки:</div>
+                                <div class="delivery-info-stat-value">от 9 до 15
+                                    дней</div>
                             </div>
                         </div>
                     </div>
@@ -1666,7 +1670,7 @@
         </div>
     </section>
 
-    <!-- Мультирегиональность и многоскладовость -->
+    <!-- БЛОК: Мультирегиональность и многоскладовость (BEM FINAL FIXED) -->
     <section class="section mr-section" id="multi-region">
         <div class="section-header" style="margin-bottom: 56px;">
             <h2 class="section-title">Мультирегиональность и <span class="mr-header-span">многоскладовость</span>
@@ -1678,6 +1682,7 @@
         </div>
 
         <div class="config-grid">
+            <!-- 1. Интерактивная карта (Широкая - 7) -->
             <div class="setting-card col-span-12 md-col-span-7 mr-map">
                 <div class="mr-map__grid-layer"></div>
                 <div class="mr-map__diagonal-layer"></div>
@@ -1699,6 +1704,7 @@
                 </div>
             </div>
 
+            <!-- 2. Список магазинов (Узкий - 5) -->
             <div class="setting-card col-span-12 md-col-span-5 mr-stores">
                 <div class="mr-stores__header">
                     <div class="mr-stores__breadcrumbs">Главная / Наши магазины</div>
@@ -1740,10 +1746,12 @@
                 </div>
             </div>
 
+            <!-- 3. Скриншот интерфейса (Узкая - 5) -->
             <div class="setting-card col-span-12 md-col-span-5 mr-screenshot">
                 <img src="assets/iros.png" alt="Interface Screenshot" class="mr-screenshot__img">
             </div>
 
+            <!-- 4. Выбор города и Чеклист (Широкая - 7) -->
             <div class="col-span-12 md-col-span-7 mr-city-col">
                 <div class="setting-card mr-city">
                     <div class="mr-city__header">
@@ -1813,6 +1821,7 @@
                 </div>
             </div>
 
+            <!-- 5. Нижние модули (4 шт) -->
             <div class="setting-card col-span-6 md-col-span-3 mr-feature">
                 <div class="mr-feature__icon-box">
                     <i data-lucide="archive" style="width: 24px;"></i>
@@ -1847,7 +1856,7 @@
         </div>
     </section>
 
-    <!-- Маркетинг -->
+    <!-- БЛОК: Маркетинг -->
     <section class="marketing-section section" id="marketing">
         <div class="container">
             <div class="section-header">
@@ -1855,7 +1864,7 @@
                     <span class="text-brand-purple">Маркетинг</span>, который работает на вас
                 </h2>
                 <p class="section-desc">
-                    В шаблон встроены все инструменты, за которые обычно платят маркетологам. Просто включите нужные
+                    Мы встроили в шаблон все инструменты, за которые обычно платят маркетологам. Просто включите нужные
                     функции и наблюдайте, как растет ваша прибыль.
                 </p>
             </div>
@@ -1887,7 +1896,7 @@
                     </div>
                     <div class="marketing-card-body">
                         <h3 class="card-title">Покупка в 1 клик</h3>
-                        <p class="card-desc">Мгновенный заказ без длинных форм. Одно поле, одна кнопка и заказ уже в
+                        <p class="card-desc">Мгновенный заказ без длинных форм. Одно поле, одна кнопка — и заказ уже в
                             работе.</p>
                     </div>
                 </div>
@@ -1958,6 +1967,7 @@
                                 </div>
                                 <!-- Product 2: Apple TV -->
                                 <div class="fbt-product-card">
+                                    <div class="fbt-product-badge">Подарок</div>
                                     <img src="assets/apple_tv_4k_remote_mockup_1778052789594.png" alt="Apple TV"
                                         class="fbt-product-image">
                                     <div class="fbt-product-title">Apple TV 4K (2022) 128GB Wi-Fi + Ethernet</div>
@@ -1977,7 +1987,7 @@
                                     </div>
                                     <div class="fbt-product-price">
                                         <span class="old">19 990 ₽</span>
-                                        <span class="current">15 000 ₽</span>
+                                        <span class="current">0 ₽</span>
                                     </div>
                                 </div>
                             </div>
@@ -1992,6 +2002,9 @@
 
                 <!-- 5. Подарки к заказу -->
                 <div class="marketing-card mc-5 marketing-card--purple">
+                    <div class="card-badge"
+                        style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">
+                        БОНУС</div>
                     <div class="marketing-card-visual">
                         <div class="mc-v-gift-cart">
                             <div class="gc-row">

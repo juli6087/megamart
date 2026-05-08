@@ -3927,8 +3927,8 @@
     }
 
     .cp-card--benefits {
-      background: #fff5f0;
-      border-color: rgba(255, 122, 0, 0.05);
+      background: var(--color-primary-light, #f5f3ff);
+      border-color: rgba(124, 58, 237, 0.05);
     }
 
     .cp-card--banner {
@@ -3947,8 +3947,8 @@
     }
 
     .cp-card-title-row .icon-box {
-      background: var(--color-accent-light, #fff5f0);
-      color: var(--color-accent, #f97316);
+      background: var(--color-primary-light, #f5f3ff);
+      color: var(--color-primary, #7c3aed);
     }
 
     /* Client List */
@@ -3971,8 +3971,8 @@
     .cp-client-icon-box {
       width: 44px;
       height: 44px;
-      background: var(--color-accent-light, #fff5f0);
-      color: var(--color-accent, #f97316);
+      background: var(--color-primary-light, #f5f3ff);
+      color: var(--color-primary, #7c3aed);
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -4001,8 +4001,8 @@
       font-size: 14px;
       font-weight: 700;
       padding: 4px 12px;
-      background: var(--color-accent-light, #ffede5);
-      color: var(--color-accent, #f97316);
+      background: var(--color-primary-light, #f5f3ff);
+      color: var(--color-primary, #7c3aed);
       border-radius: 8px;
     }
 
@@ -4017,7 +4017,7 @@
     .cp-benefit-num {
       width: 28px;
       height: 28px;
-      background: var(--color-accent, #f97316);
+      background: var(--color-primary, #7c3aed);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -4052,7 +4052,7 @@
     }
 
     .cp-price-row--accent {
-      color: var(--color-accent, #f97316);
+      color: var(--color-primary, #7c3aed);
     }
 
     .cp-price-val {
@@ -4077,8 +4077,8 @@
     .cp-banner-icon-box {
       width: 50px;
       height: 50px;
-      background: var(--color-accent-light, #fff5f0);
-      color: var(--color-accent, #f97316);
+      background: var(--color-primary-light, #f5f3ff);
+      color: var(--color-primary, #7c3aed);
       border-radius: 14px;
       display: flex;
       align-items: center;
@@ -4996,16 +4996,19 @@
       width: 56px;
       height: 56px;
       border-radius: 18px;
-      background: rgba(255, 131, 0, 0.12);
+      background: var(--color-primary-light);
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: var(--transition-base);
     }
 
-    .adaptive-card__icon-wrap i {
+    .adaptive-card__icon-wrap i,
+    .adaptive-card__icon-wrap svg {
       width: 24px;
       height: 24px;
-      color: #fb923c;
+      color: var(--color-primary);
+      stroke: var(--color-primary);
     }
 
     .adaptive-card__heading {
@@ -5018,7 +5021,7 @@
     .adaptive-card__stat {
       font-size: 48px;
       font-weight: 800;
-      color: #fb923c;
+      color: var(--color-primary);
       line-height: 1;
       display: block;
     }
@@ -5053,8 +5056,8 @@
     }
 
     .adaptive-device-card--highlight {
-      background: #f8f4ec;
-      border-color: rgba(245, 226, 211, 0.8);
+      background: var(--color-primary-light);
+      border-color: rgba(124, 58, 237, 0.15);
     }
 
     .adaptive-device-icon {
@@ -5066,15 +5069,11 @@
       justify-content: center;
     }
 
-    .adaptive-device-icon--phone {
-      background: #fff4e6;
-      color: #fb923c;
-    }
-
+    .adaptive-device-icon--phone,
     .adaptive-device-icon--tablet,
     .adaptive-device-icon--desktop {
-      background: #f1f5f9;
-      color: #0f172a;
+      background: var(--color-primary-light);
+      color: var(--color-primary);
     }
 
     .adaptive-device-icon i {
@@ -5130,8 +5129,8 @@
     }
 
     .hermitage-card__icon-box.icon-box {
-      background: var(--color-accent-light);
-      color: var(--color-accent);
+      background: var(--color-primary-light);
+      color: var(--color-primary);
       width: 56px;
       height: 56px;
       border-radius: 18px;
@@ -5173,7 +5172,7 @@
     .hermitage-visual__status-icon {
       width: 24px;
       height: 24px;
-      color: var(--color-accent);
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -5212,7 +5211,7 @@
     }
 
     .hermitage-tool__icon {
-      color: var(--color-accent);
+      color: var(--color-primary);
     }
 
     .hermitage-tool__icon i {
@@ -5241,8 +5240,8 @@
     .hermitage-feature__check {
       width: 20px;
       height: 20px;
-      background: var(--color-accent-light);
-      color: var(--color-accent);
+      background: var(--color-primary-light);
+      color: var(--color-primary);
       border-radius: 50%;
       display: flex;
       align-items: center;
