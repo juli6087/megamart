@@ -73,7 +73,7 @@
 
             <div class="container">
                 <div class="bento-v2-grid">
-                    <div class="bento-v2-card--main group">
+                    <div class="bento-v2-card--main">
                         <svg class="bento-v2-waves" preserveAspectRatio="none" viewBox="0 0 800 400" fill="none">
                             <path d="M-50,80 C150,200 300,-20 500,120 C700,260 850,60 900,140" stroke="#FF7A00"
                                 stroke-width="1" opacity="0.5" fill="none" stroke-linecap="round" />
@@ -99,34 +99,10 @@
                                 </p>
                             </div>
 
-                            <button class="bento-v2-btn-demo group">
-                                <div class="bento-v2-btn-icon-wrap">
-                                    <svg class="bento-v2-btn-main-arrow" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </div>
+                            <button class="bento-v2-btn-demo">
                                 <span class="bento-v2-btn-text">Посмотреть демо</span>
-                                <div class="bento-v2-btn-arrows">
-                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                            d="M9 5l7 7-7 7">
-                                        </path>
-                                    </svg>
-                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                            d="M9 5l7 7-7 7">
-                                        </path>
-                                    </svg>
-                                    <svg class="bento-v2-btn-chevron" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                            d="M9 5l7 7-7 7">
-                                        </path>
-                                    </svg>
+                                <div class="bento-v2-btn-icon-wrap">
+                                    <i data-lucide="play" style="width: 14px; height: 14px;"></i>
                                 </div>
                             </button>
                         </div>
@@ -152,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="bento-v2-card--adaptive group">
+                    <div class="bento-v2-card--adaptive">
                         <div class="bento-v2-glow"></div>
 
                         <div class="bento-v2-adaptive-text-wrap">
@@ -188,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="bento-v2-card--business group">
+                    <div class="bento-v2-card--business">
                         <div>
                             <div class="bento-v2-avatar-row">
                                 <div class="bento-v2-avatar-stack">
@@ -762,7 +738,10 @@
             <!-- Main Button -->
             <div style="text-align: center;">
                 <a href="#" class="main-action-btn">
-                    ПОСМОТРЕТЬ ДЕМО-ВЕРСИЮ <i data-lucide="arrow-up-right" style="width: 20px; height: 20px;"></i>
+                    ПОСМОТРЕТЬ ДЕМО-ВЕРСИЮ
+                    <div class="btn-primary__play">
+                        <i data-lucide="play" style="width: 14px; height: 14px;"></i>
+                    </div>
                 </a>
             </div>
 
@@ -1069,7 +1048,7 @@
                 </p>
             </div>
 
-            <div style="width: 800px; max-width: 95vw; margin: 0 auto; display: flex; justify-content: center;">
+            <div style="max-width: 95vw; margin: 0 auto; display: flex; justify-content: center;">
                 <div class="qf-card">
                     <div class="qf-inner">
                         <div class="qf-breadcrumbs">
@@ -1132,14 +1111,14 @@
                 </p>
             </div>
 
-            <div class="catalog-main-visual" style="margin-top: 2.5rem;">
+            <div class="catalog-main-visual">
                 <div class="catalog-main-mockup">
                     <img src="assets/itemIphone.png" alt="Карточка товара iPhone" class="catalog-main-img"
                         style="object-fit: contain; border-radius: 26px; background: #fff; max-height: 600px;">
                 </div>
             </div>
 
-            <div class="config-grid mt-10">
+            <div class="config-grid">
                 <div class="setting-card md-col-span-7 col-span-12">
                     <div class="setting-card__header card-header">
                         <div class="setting-icon setting-icon--orange icon-box">
@@ -1937,7 +1916,7 @@
                 </div>
 
                 <!-- 4. С этим товаром покупают -->
-                <div class="marketing-card mc-5 marketing-card--blue" style="grid-column: span 7;">
+                <div class="marketing-card mc-10 marketing-card--blue">
                     <div class="marketing-card-visual">
                         <div class="mc-v-fbt">
                             <div class="fbt-promo-row">
@@ -2099,7 +2078,12 @@
                                 <div class="mc-v-news-badge">SALE</div>
                                 <div class="mc-v-news-title">Закрытая распродажа!</div>
                                 <div class="mc-v-news-text">Только для подписчиков - скидки до 50%</div>
-                                <button class="mc-v-news-btn">Узнать подробнее</button>
+                                <button class="mc-v-news-btn">
+                                    Узнать подробнее
+                                    <div class="btn-primary__play" style="width: 24px; height: 24px;">
+                                        <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2329,7 +2313,12 @@
                                 <div class="launch-skeleton-line"></div>
                             </div>
                         </div>
-                        <button class="launch-btn-primary">Перейти в документацию</button>
+                        <button class="launch-btn-primary">
+                            Перейти в документацию
+                            <div class="btn-primary__play">
+                                <i data-lucide="file-text" style="width: 14px; height: 14px;"></i>
+                            </div>
+                        </button>
                     </div>
                 </div>
 
@@ -2500,7 +2489,9 @@
                 </div>
                 <a href="#" class="int-setup-note__btn">
                     Обсудить настройку
-                    <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                    <div class="btn-primary__play" style="width: 24px; height: 24px;">
+                        <i data-lucide="message-circle" style="width: 12px; height: 12px;"></i>
+                    </div>
                 </a>
             </div>
         </div>
