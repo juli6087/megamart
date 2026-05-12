@@ -614,10 +614,7 @@ img {
 }
 
 .btn-primary,
-.btn-cta,
-.btn-demo-premium,
-.bento-v2-btn-demo,
-.main-action-btn,
+.btn-demo,
 .launch-btn-primary,
 .int-setup-note__btn,
 .mc-v-news-btn,
@@ -641,29 +638,27 @@ img {
   white-space: nowrap;
 }
 
+.btn-demo {
+  margin-top: 1.5rem;
+}
+
 .btn-primary:hover,
-.btn-cta:hover,
-.btn-demo-premium:hover,
-.bento-v2-btn-demo:hover,
-.main-action-btn:hover,
+.btn-demo:hover,
 .launch-btn-primary:hover,
 .int-setup-note__btn:hover,
 .mc-v-news-btn:hover,
 .oc-btn-cart:hover,
 .ui-scm-btn:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.4);
   filter: brightness(1.1);
 }
 
 .btn-primary:active,
-.btn-demo-premium:active {
+.btn-demo:active {
   transform: translateY(-1px) scale(0.98);
 }
 
 .btn-primary__play,
-.btn-cta__icon,
-.btn-demo-premium__play,
+.btn-demo__play,
 .bento-v2-btn-icon-wrap {
   display: flex;
   align-items: center;
@@ -677,13 +672,10 @@ img {
 }
 
 .btn-primary:hover .btn-primary__play,
-.btn-cta:hover .btn-cta__icon,
-.btn-demo-premium:hover .btn-demo-premium__play,
-.bento-v2-btn-demo:hover .bento-v2-btn-icon-wrap,
+.btn-demo:hover .btn-demo__play,
 .mc-v-news-btn:hover .btn-primary__play,
 .oc-btn-cart:hover .btn-primary__play,
 .ui-scm-btn:hover .btn-primary__play {
-  transform: scale(1.1) rotate(15deg);
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -742,13 +734,23 @@ img {
 .bento-v2-btn-text {
   font-weight: 700;
   font-size: 14px;
-  color: white !important;
+  color: #1f2937;
   letter-spacing: 0.025em;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
 
-/* Redundant bento arrow styles removed during unification */
+.bento-v2-btn-chevrons {
+  display: flex;
+  align-items: center;
+  color: #d1d5db;
+  margin-left: 1rem;
+}
+
+.bento-v2-btn-chevrons i {
+  width: 12px;
+  height: 12px;
+}
 
 .bento-v2-stat-wrap {
   text-align: center;
@@ -921,10 +923,11 @@ img {
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid #f3f4f6;
   transition: box-shadow 0.15s ease-in-out;
+  text-decoration: none;
   cursor: pointer;
   flex-shrink: 0;
 }
